@@ -1,0 +1,9 @@
+ictdata_homepage:
+    path:     /
+    defaults: { _controller: IctdataBundle:Ictdata:index }
+ictdata_grapheMobile:
+    path:     /grm
+    defaults: { _controller: IctdataBundle:Ictdata:grapheMobile }
+ictdata_grapheFixe:
+    path:     /grf
+    defaults: { _controller: IctdataBundle:Ictdata:grapheFixe }
