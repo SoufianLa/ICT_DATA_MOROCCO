@@ -1,0 +1,8 @@
+{% extends "FOSUserBundle::layout.html.twig" %}
+    {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/auth.css') }}"  />
+    {% endblock %}
+{% block fos_user_content %}
+    {{ include('FOSUserBundle:Security:login_content.html.twig') }}
+{% endblock fos_user_content %}
