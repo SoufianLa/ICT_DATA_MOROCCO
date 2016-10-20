@@ -19,8 +19,8 @@ class __TwigTemplate_1e11e19ebcf55f4941897846e0e9c65dcfb0a41975fe448320b35288ca0
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_2380fcd863a2d5a0f67d6684cc5c51e367e1b5db77bb8e98f67f1ef632f2ce45 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_2380fcd863a2d5a0f67d6684cc5c51e367e1b5db77bb8e98f67f1ef632f2ce45->enter($__internal_2380fcd863a2d5a0f67d6684cc5c51e367e1b5db77bb8e98f67f1ef632f2ce45_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "::template.html.twig"));
+        $__internal_460e4820a7fcb300a051e8abd058902be36606b9aa0554f95b7f6136a369ef20 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_460e4820a7fcb300a051e8abd058902be36606b9aa0554f95b7f6136a369ef20->enter($__internal_460e4820a7fcb300a051e8abd058902be36606b9aa0554f95b7f6136a369ef20_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "::template.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -234,6 +234,21 @@ class __TwigTemplate_1e11e19ebcf55f4941897846e0e9c65dcfb0a41975fe448320b35288ca0
             </div>
         </div>
     </section>
+    <section class=\"success\" >
+        <div class=\"container\">
+            <div class=\"row\">
+            <div class=\"col-lg-12 text-center\">
+            <div class=\"nine columns centered text-centered\">
+                <h2>Administration space</h2>
+                <p class=\"subheading\">
+                    this space is reserved for Administrators
+                </p>
+                <a class=\"btn btn-success btn-lg\" href=\"\" >Admin</a>
+            </div>
+        </div>
+                </div>
+            </div>
+    </section>
     <footer class=\"text-center\">
         <div class=\"footer-above\">
             <div class=\"container\">
@@ -303,7 +318,7 @@ class __TwigTemplate_1e11e19ebcf55f4941897846e0e9c65dcfb0a41975fe448320b35288ca0
                             <h2>Indicators</h2>
                             <hr class=\"star-primary\">
                             <img src=\"";
-        // line 251
+        // line 266
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/indic.png"), "html", null, true);
         echo "\" class=\"img-responsive img-centered\" alt=\"the picture not found\" height=\"420\" width=\"420\">
                             <p>All  indicators are shown below :</p>
@@ -317,7 +332,7 @@ class __TwigTemplate_1e11e19ebcf55f4941897846e0e9c65dcfb0a41975fe448320b35288ca0
                         <div class=\"img-hover\">
                             <a data-toggle = \"collapse\" data-parent = \"#accordion\" href = \"#collapseThree1\">
                                 <img src=\"";
-        // line 262
+        // line 277
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/1.png"), "html", null, true);
         echo "\" alt=\"\"></a>
                         </div>
@@ -325,31 +340,31 @@ class __TwigTemplate_1e11e19ebcf55f4941897846e0e9c65dcfb0a41975fe448320b35288ca0
                             <div class = \"panel-body\">
                                 <div class=\"row\">
                                     <div class=\"img-hover\"><div class=\"col-lg-12\"><a href=\"#\"><img src=\"";
-        // line 267
+        // line 282
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/transparent/m1m.png"), "html", null, true);
         echo "\"  height=\"38\" width=\"200\" alt=\"\"></a></div>
                                     </div></div>
                                 <div class=\"row\">
                                     <div class=\"img-hover\"><div class=\"col-lg-12\"><a href=\"#\"><img src=\"";
-        // line 270
+        // line 285
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/transparent/m2m.png"), "html", null, true);
         echo "\"  height=\"38\" width=\"200\" alt=\"\"></a></div>
                                     </div></div>
                                 <div class=\"row\">
                                     <div class=\"img-hover\"><div class=\"col-lg-12\"><a href=\"#\"><img src=\"";
-        // line 273
+        // line 288
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/transparent/m3.png"), "html", null, true);
         echo "\"  height=\"38\" width=\"200\" alt=\"\"></a></div>
                                     </div></div>
                                 <div class=\"row\">
                                     <div class=\"img-hover\"><div class=\"col-lg-12\"><a href=\"#\"><img src=\"";
-        // line 276
+        // line 291
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/transparent/m4m.png"), "html", null, true);
         echo "\"  height=\"38\" width=\"200\" alt=\"\"></a></div>
                                     </div></div>
                                 <div class=\"row\">
                                     <div class=\"img-hover\"><div class=\"col-lg-12\"><a href=\"#\"><img src=\"";
-        // line 279
+        // line 294
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/transparent/m5.png"), "html", null, true);
         echo "\"  height=\"38\" width=\"200\" alt=\"\"></a></div>
                                     </div></div>
@@ -362,7 +377,7 @@ class __TwigTemplate_1e11e19ebcf55f4941897846e0e9c65dcfb0a41975fe448320b35288ca0
                         <div class=\"img-hover\">
                             <a data-toggle = \"collapse\" data-parent = \"#accordion\" href = \"#collapseThree\">
                                 <img src=\"";
-        // line 289
+        // line 304
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/2.png"), "html", null, true);
         echo "\"  alt=\"\" >
                             </a></div>
@@ -370,20 +385,20 @@ class __TwigTemplate_1e11e19ebcf55f4941897846e0e9c65dcfb0a41975fe448320b35288ca0
                             <div class = \"panel-body\">
                                 <div class=\"row\">
                                     <div class=\"img-hover\"><div class=\"col-lg-12\"><a href=\"#\"><img src=\"";
-        // line 294
+        // line 309
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/transparent/m1m.png"), "html", null, true);
         echo "\"  height=\"38\" width=\"200\" alt=\"\"></a></div>
                                     </div></div>
                                 <div class=\"row\">
                                     <div class=\"img-hover\"><div class=\"col-lg-12\"><a href=\"#\"><img src=\"";
-        // line 297
+        // line 312
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/transparent/m2m.png"), "html", null, true);
         echo "\"  height=\"38\" width=\"200\" alt=\"\"></a></div>
                                     </div></div>
 
                                 <div class=\"row\">
                                     <div class=\"img-hover\"><div class=\"col-lg-12\"><a href=\"#\"><img src=\"";
-        // line 301
+        // line 316
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/transparent/m4m.png"), "html", null, true);
         echo "\"  height=\"38\" width=\"200\" alt=\"\"></a></div>
                                     </div></div>
@@ -395,7 +410,7 @@ class __TwigTemplate_1e11e19ebcf55f4941897846e0e9c65dcfb0a41975fe448320b35288ca0
                         <div class=\"img-hover\">
                             <a data-toggle = \"collapse\" data-parent = \"#accordion\" href = \"#collapseThree3\">
                                 <img src=\"";
-        // line 310
+        // line 325
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/3.png"), "html", null, true);
         echo "\"  alt=\"\">
                             </a></div>
@@ -403,25 +418,25 @@ class __TwigTemplate_1e11e19ebcf55f4941897846e0e9c65dcfb0a41975fe448320b35288ca0
                             <div class = \"panel-body\">
                                 <div class=\"row\">
                                     <div class=\"img-hover\"><div class=\"col-lg-12\"><a href=\"#\"><img src=\"";
-        // line 315
+        // line 330
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/transparent/m1m.png"), "html", null, true);
         echo "\"  height=\"38\" width=\"200\" alt=\"\"></a></div>
                                     </div></div>
                                 <div class=\"row\">
                                     <div class=\"img-hover\"><div class=\"col-lg-12\"><a href=\"#\"><img src=\"";
-        // line 318
+        // line 333
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/transparent/m2m.png"), "html", null, true);
         echo "\"  height=\"38\" width=\"200\" alt=\"\"></a></div>
                                     </div></div>
                                 <div class=\"row\">
                                     <div class=\"img-hover\"><div class=\"col-lg-12\"><a href=\"#\"><img src=\"";
-        // line 321
+        // line 336
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/transparent/m3.png"), "html", null, true);
         echo "\"  height=\"38\" width=\"200\" alt=\"\"></a></div>
                                     </div></div>
                                 <div class=\"row\">
                                     <div class=\"img-hover\"><div class=\"col-lg-12\"><a href=\"#\"><img src=\"";
-        // line 324
+        // line 339
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/transparent/m4m.png"), "html", null, true);
         echo "\"  height=\"38\" width=\"200\" alt=\"\"></a></div>
                                     </div></div>
@@ -435,7 +450,7 @@ class __TwigTemplate_1e11e19ebcf55f4941897846e0e9c65dcfb0a41975fe448320b35288ca0
                         <div class=\"img-hover\">
                             <a data-toggle = \"collapse\" data-parent = \"#accordion\" href = \"#collapseThree4\">
                                 <img src=\"";
-        // line 335
+        // line 350
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/4.png"), "html", null, true);
         echo "\" alt=\"\">
                             </a></div>
@@ -443,13 +458,13 @@ class __TwigTemplate_1e11e19ebcf55f4941897846e0e9c65dcfb0a41975fe448320b35288ca0
                             <div class = \"panel-body\">
                                 <div class=\"row\">
                                     <div class=\"img-hover\"><div class=\"col-lg-12\"><a href=\"#\"><img src=\"";
-        // line 340
+        // line 355
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/transparent/m1m.png"), "html", null, true);
         echo "\"  height=\"38\" width=\"200\" alt=\"\"></a></div>
                                     </div></div>
                                 <div class=\"row\">
                                     <div class=\"img-hover\"><div class=\"col-lg-12\"><a href=\"#\"><img src=\"";
-        // line 343
+        // line 358
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/transparent/m2m.png"), "html", null, true);
         echo "\"  height=\"38\" width=\"200\" alt=\"\"></a></div>
                                     </div></div>
@@ -460,7 +475,7 @@ class __TwigTemplate_1e11e19ebcf55f4941897846e0e9c65dcfb0a41975fe448320b35288ca0
                         <div class=\"img-hover\">
                             <a data-toggle = \"collapse\" data-parent = \"#accordion\" href = \"#collapseThree5\">
                                 <img src=\"";
-        // line 351
+        // line 366
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/5.png"), "html", null, true);
         echo "\"  alt=\"\" >
                             </a></div>
@@ -468,20 +483,20 @@ class __TwigTemplate_1e11e19ebcf55f4941897846e0e9c65dcfb0a41975fe448320b35288ca0
                             <div class = \"panel-body\">
                                 <div class=\"row\">
                                     <div class=\"img-hover\"><div class=\"col-lg-12\"><a href=\"#\"><img src=\"";
-        // line 356
+        // line 371
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/transparent/m1m.png"), "html", null, true);
         echo "\"  height=\"38\" width=\"200\" alt=\"\"></a></div>
                                     </div></div>
                                 <div class=\"row\">
                                     <div class=\"img-hover\"><div class=\"col-lg-12\"><a href=\"#\"><img src=\"";
-        // line 359
+        // line 374
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/transparent/m2m.png"), "html", null, true);
         echo "\"  height=\"38\" width=\"200\" alt=\"\"></a></div>
                                     </div></div>
 
                                 <div class=\"row\">
                                     <div class=\"img-hover\"><div class=\"col-lg-12\"><a href=\"#\"><img src=\"";
-        // line 363
+        // line 378
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/transparent/m4m.png"), "html", null, true);
         echo "\"  height=\"38\" width=\"200\" alt=\"\"></a></div>
                                     </div></div>
@@ -492,7 +507,7 @@ class __TwigTemplate_1e11e19ebcf55f4941897846e0e9c65dcfb0a41975fe448320b35288ca0
                         <div class=\"img-hover\">
                             <a  data-toggle = \"collapse\" data-parent = \"#accordion\" href = \"#collapseThree6\">
                                 <img  src=\"";
-        // line 371
+        // line 386
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/6.png"), "html", null, true);
         echo "\"  alt=\"\" >
                             </a></div>
@@ -500,21 +515,21 @@ class __TwigTemplate_1e11e19ebcf55f4941897846e0e9c65dcfb0a41975fe448320b35288ca0
                             <div class = \"panel-body\">
                                 <div class=\"row\">
                                     <div class=\"img-hover\"><div class=\"col-lg-12\"><a href=\"#\"><img src=\"";
-        // line 376
+        // line 391
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/transparent/m4m.png"), "html", null, true);
         echo "\"  height=\"38\" width=\"200\" alt=\"\"></a></div>
                                     </div>
                                 </div>
                                 <div class=\"row\">
                                     <div class=\"img-hover\"><div class=\"col-lg-12\"><a href=\"#\"><img src=\"";
-        // line 380
+        // line 395
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/transparent/m5.png"), "html", null, true);
         echo "\"  height=\"38\" width=\"200\" alt=\"\"></a></div>
                                     </div>
                                 </div>
                                 <div class=\"row\">
                                     <div class=\"img-hover\"><div class=\"col-lg-12\"><a href=\"#\"><img src=\"";
-        // line 384
+        // line 399
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/transparent/m6.png"), "html", null, true);
         echo "\"  height=\"38\" width=\"200\" alt=\"\"></a></div>
                                     </div>
@@ -544,7 +559,7 @@ class __TwigTemplate_1e11e19ebcf55f4941897846e0e9c65dcfb0a41975fe448320b35288ca0
                             <h2>Market</h2>
                             <hr class=\"star-primary\">
                             <img src=\"";
-        // line 411
+        // line 426
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/circus.png"), "html", null, true);
         echo "\" class=\"img-responsive img-centered\" alt=\"the picture not found\" height=\"420\" width=\"420\">
                             <p>All  indicators are shown below :</p>
@@ -558,7 +573,7 @@ class __TwigTemplate_1e11e19ebcf55f4941897846e0e9c65dcfb0a41975fe448320b35288ca0
                         <div class=\"img-hover\">
                             <a data-toggle = \"collapse\" data-parent = \"#accordion\" href = \"#collapseThree1m\">
                                 <img src=\"";
-        // line 422
+        // line 437
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/m1.png"), "html", null, true);
         echo "\" alt=\"\"></a>
                         </div>
@@ -566,31 +581,31 @@ class __TwigTemplate_1e11e19ebcf55f4941897846e0e9c65dcfb0a41975fe448320b35288ca0
                             <div class = \"panel-body\">
                                 <div class=\"row\">
                                     <div class=\"img-hover\"><div class=\"col-lg-12\"><a href=\"#\"><img src=\"";
-        // line 427
+        // line 442
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/transparent/1.png"), "html", null, true);
         echo "\"  height=\"38\" width=\"200\" alt=\"\"></a></div>
                                     </div></div>
                                 <div class=\"row\">
                                     <div class=\"img-hover\"><div class=\"col-lg-12\"><a href=\"#\"><img src=\"";
-        // line 430
+        // line 445
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/transparent/2.png"), "html", null, true);
         echo "\"  height=\"38\" width=\"200\" alt=\"\"></a></div>
                                     </div></div>
                                 <div class=\"row\">
                                     <div class=\"img-hover\"><div class=\"col-lg-12\"><a href=\"#\"><img src=\"";
-        // line 433
+        // line 448
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/transparent/3.png"), "html", null, true);
         echo "\"  height=\"38\" width=\"200\" alt=\"\"></a></div>
                                     </div></div>
                                 <div class=\"row\">
                                     <div class=\"img-hover\"><div class=\"col-lg-12\"><a href=\"#\"><img src=\"";
-        // line 436
+        // line 451
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/transparent/4.png"), "html", null, true);
         echo "\"  height=\"38\" width=\"200\" alt=\"\"></a></div>
                                     </div></div>
                                 <div class=\"row\">
                                     <div class=\"img-hover\"><div class=\"col-lg-12\"><a href=\"#\"><img src=\"";
-        // line 439
+        // line 454
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/transparent/5.png"), "html", null, true);
         echo "\"  height=\"38\" width=\"200\" alt=\"\"></a></div>
                                     </div></div>
@@ -603,7 +618,7 @@ class __TwigTemplate_1e11e19ebcf55f4941897846e0e9c65dcfb0a41975fe448320b35288ca0
                         <div class=\"img-hover\">
                             <a data-toggle = \"collapse\" data-parent = \"#accordion\" href = \"#collapseThree2m\">
                                 <img src=\"";
-        // line 449
+        // line 464
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/m2.png"), "html", null, true);
         echo "\"  alt=\"\" >
                             </a></div>
@@ -611,31 +626,31 @@ class __TwigTemplate_1e11e19ebcf55f4941897846e0e9c65dcfb0a41975fe448320b35288ca0
                             <div class = \"panel-body\">
                                 <div class=\"row\">
                                     <div class=\"img-hover\"><div class=\"col-lg-12\"><a href=\"#\"><img src=\"";
-        // line 454
+        // line 469
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/transparent/1.png"), "html", null, true);
         echo "\"  height=\"38\" width=\"200\" alt=\"\"></a></div>
                                     </div></div>
                                 <div class=\"row\">
                                     <div class=\"img-hover\"><div class=\"col-lg-12\"><a href=\"#\"><img src=\"";
-        // line 457
+        // line 472
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/transparent/2.png"), "html", null, true);
         echo "\"  height=\"38\" width=\"200\" alt=\"\"></a></div>
                                     </div></div>
                                 <div class=\"row\">
                                     <div class=\"img-hover\"><div class=\"col-lg-12\"><a href=\"#\"><img src=\"";
-        // line 460
+        // line 475
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/transparent/3.png"), "html", null, true);
         echo "\"  height=\"38\" width=\"200\" alt=\"\"></a></div>
                                     </div></div>
                                 <div class=\"row\">
                                     <div class=\"img-hover\"><div class=\"col-lg-12\"><a href=\"#\"><img src=\"";
-        // line 463
+        // line 478
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/transparent/4.png"), "html", null, true);
         echo "\"  height=\"38\" width=\"200\" alt=\"\"></a></div>
                                     </div></div>
                                 <div class=\"row\">
                                     <div class=\"img-hover\"><div class=\"col-lg-12\"><a href=\"#\"><img src=\"";
-        // line 466
+        // line 481
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/transparent/5.png"), "html", null, true);
         echo "\"  height=\"38\" width=\"200\" alt=\"\"></a></div>
                                     </div></div>
@@ -646,7 +661,7 @@ class __TwigTemplate_1e11e19ebcf55f4941897846e0e9c65dcfb0a41975fe448320b35288ca0
                         <div class=\"img-hover\">
                             <a data-toggle = \"collapse\" data-parent = \"#accordion\" href = \"#collapseThree3m\">
                                 <img src=\"";
-        // line 474
+        // line 489
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/m3.png"), "html", null, true);
         echo "\"  alt=\"\">
                             </a></div>
@@ -655,13 +670,13 @@ class __TwigTemplate_1e11e19ebcf55f4941897846e0e9c65dcfb0a41975fe448320b35288ca0
 
                                 <div class=\"row\">
                                     <div class=\"img-hover\"><div class=\"col-lg-12\"><a href=\"#\"><img src=\"";
-        // line 480
+        // line 495
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/transparent/1.png"), "html", null, true);
         echo "\"  height=\"38\" width=\"200\" alt=\"\"></a></div>
                                     </div></div>
                                 <div class=\"row\">
                                     <div class=\"img-hover\"><div class=\"col-lg-12\"><a href=\"#\"><img src=\"";
-        // line 483
+        // line 498
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/transparent/3.png"), "html", null, true);
         echo "\"  height=\"38\" width=\"200\" alt=\"\"></a></div>
                                     </div></div>
@@ -675,7 +690,7 @@ class __TwigTemplate_1e11e19ebcf55f4941897846e0e9c65dcfb0a41975fe448320b35288ca0
                         <div class=\"img-hover\">
                             <a data-toggle = \"collapse\" data-parent = \"#accordion\" href = \"#collapseThree4m\">
                                 <img src=\"";
-        // line 494
+        // line 509
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/m4.png"), "html", null, true);
         echo "\" alt=\"\">
                             </a></div>
@@ -683,31 +698,31 @@ class __TwigTemplate_1e11e19ebcf55f4941897846e0e9c65dcfb0a41975fe448320b35288ca0
                             <div class = \"panel-body\">
                                 <div class=\"row\">
                                     <div class=\"img-hover\"><div class=\"col-lg-12\"><a href=\"#\"><img src=\"";
-        // line 499
+        // line 514
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/transparent/1.png"), "html", null, true);
         echo "\"  height=\"38\" width=\"200\" alt=\"\"></a></div>
                                     </div></div>
                                 <div class=\"row\">
                                     <div class=\"img-hover\"><div class=\"col-lg-12\"><a href=\"#\"><img src=\"";
-        // line 502
+        // line 517
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/transparent/2.png"), "html", null, true);
         echo "\"  height=\"38\" width=\"200\" alt=\"\"></a></div>
                                     </div></div>
                                 <div class=\"row\">
                                     <div class=\"img-hover\"><div class=\"col-lg-12\"><a href=\"#\"><img src=\"";
-        // line 505
+        // line 520
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/transparent/3.png"), "html", null, true);
         echo "\"  height=\"38\" width=\"200\" alt=\"\"></a></div>
                                     </div></div>
                                 <div class=\"row\">
                                     <div class=\"img-hover\"><div class=\"col-lg-12\"><a href=\"#\"><img src=\"";
-        // line 508
+        // line 523
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/transparent/5.png"), "html", null, true);
         echo "\"  height=\"38\" width=\"200\" alt=\"\"></a></div>
                                     </div></div>
                                 <div class=\"row\">
                                     <div class=\"img-hover\"><div class=\"col-lg-12\"><a href=\"#\"><img src=\"";
-        // line 511
+        // line 526
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/transparent/6.png"), "html", null, true);
         echo "\"  height=\"38\" width=\"200\" alt=\"\"></a></div>
                                     </div></div>
@@ -718,7 +733,7 @@ class __TwigTemplate_1e11e19ebcf55f4941897846e0e9c65dcfb0a41975fe448320b35288ca0
                         <div class=\"img-hover\">
                             <a data-toggle = \"collapse\" data-parent = \"#accordion\" href = \"#collapseThree5m\">
                                 <img src=\"";
-        // line 519
+        // line 534
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/m5.png"), "html", null, true);
         echo "\"  alt=\"\" >
                             </a></div>
@@ -727,13 +742,13 @@ class __TwigTemplate_1e11e19ebcf55f4941897846e0e9c65dcfb0a41975fe448320b35288ca0
 
                                 <div class=\"row\">
                                     <div class=\"img-hover\"><div class=\"col-lg-12\"><a href=\"#\"><img src=\"";
-        // line 525
+        // line 540
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/transparent/1.png"), "html", null, true);
         echo "\"  height=\"38\" width=\"200\" alt=\"\"></a></div>
                                     </div></div>
                                 <div class=\"row\">
                                     <div class=\"img-hover\"><div class=\"col-lg-12\"><a href=\"#\"><img src=\"";
-        // line 528
+        // line 543
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/transparent/6.png"), "html", null, true);
         echo "\"  height=\"38\" width=\"200\" alt=\"\"></a></div>
                                     </div></div>
@@ -744,7 +759,7 @@ class __TwigTemplate_1e11e19ebcf55f4941897846e0e9c65dcfb0a41975fe448320b35288ca0
                         <div class=\"img-hover\">
                             <a  data-toggle = \"collapse\" data-parent = \"#accordion\" href = \"#collapseThree6m\">
                                 <img  src=\"";
-        // line 536
+        // line 551
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/m6.png"), "html", null, true);
         echo "\"  alt=\"\" >
                             </a></div>
@@ -752,7 +767,7 @@ class __TwigTemplate_1e11e19ebcf55f4941897846e0e9c65dcfb0a41975fe448320b35288ca0
                             <div class = \"panel-body\">
                                 <div class=\"row\">
                                     <div class=\"img-hover\"><div class=\"col-lg-12\"><a href=\"#\"><img src=\"";
-        // line 541
+        // line 556
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/transparent/6.png"), "html", null, true);
         echo "\"  height=\"38\" width=\"200\" alt=\"\"></a></div>
                                     </div>
@@ -781,7 +796,7 @@ class __TwigTemplate_1e11e19ebcf55f4941897846e0e9c65dcfb0a41975fe448320b35288ca0
                             <h2>Market</h2>
                             <hr class=\"star-primary\">
                             <img src=\"";
-        // line 567
+        // line 582
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/safe.png"), "html", null, true);
         echo "\" class=\"img-responsive img-centered\" alt=\"the picture not found\" height=\"420\" width=\"420\">
                             <p>All  indicators are shown below :</p>
@@ -795,7 +810,7 @@ class __TwigTemplate_1e11e19ebcf55f4941897846e0e9c65dcfb0a41975fe448320b35288ca0
                         <div class=\"img-hover\">
                             <a href=\"#\">
                                 <img src=\"";
-        // line 578
+        // line 593
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/m1m.png"), "html", null, true);
         echo "\" alt=\"\" >
                             </a></div>
@@ -804,7 +819,7 @@ class __TwigTemplate_1e11e19ebcf55f4941897846e0e9c65dcfb0a41975fe448320b35288ca0
                         <div class=\"img-hover\">
                             <a href=\"#\">
                                 <img src=\"";
-        // line 584
+        // line 599
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/m2m.png"), "html", null, true);
         echo "\"  alt=\"\" >
                             </a></div>
@@ -816,7 +831,7 @@ class __TwigTemplate_1e11e19ebcf55f4941897846e0e9c65dcfb0a41975fe448320b35288ca0
                         <div class=\"img-hover\">
                             <a href=\"#\">
                                 <img src=\"";
-        // line 593
+        // line 608
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/comp.png"), "html", null, true);
         echo "\"  alt=\"\" >
                             </a>
@@ -826,7 +841,7 @@ class __TwigTemplate_1e11e19ebcf55f4941897846e0e9c65dcfb0a41975fe448320b35288ca0
                         <div class=\"img-hover\">
                             <a href=\"#\">
                                 <img src=\"";
-        // line 600
+        // line 615
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/portfolio/m4m.png"), "html", null, true);
         echo "\"  alt=\"\" >
                             </a>
@@ -839,84 +854,84 @@ class __TwigTemplate_1e11e19ebcf55f4941897846e0e9c65dcfb0a41975fe448320b35288ca0
         </div>
     </div>
     <script src=\"";
-        // line 610
+        // line 625
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("vendor/jquery/jquery.min.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 611
+        // line 626
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("vendor/bootstrap/js/bootstrap.min.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 612
+        // line 627
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("js/jquery.easing.min.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 613
+        // line 628
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("js/jqBootstrapValidation.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 614
+        // line 629
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("js/contact_me.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 615
+        // line 630
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("js/freelancer.min.js"), "html", null, true);
         echo "\"></script>
 ";
-        // line 616
+        // line 631
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 617
+        // line 632
         echo "
 </body>
 </html>
 ";
         
-        $__internal_2380fcd863a2d5a0f67d6684cc5c51e367e1b5db77bb8e98f67f1ef632f2ce45->leave($__internal_2380fcd863a2d5a0f67d6684cc5c51e367e1b5db77bb8e98f67f1ef632f2ce45_prof);
+        $__internal_460e4820a7fcb300a051e8abd058902be36606b9aa0554f95b7f6136a369ef20->leave($__internal_460e4820a7fcb300a051e8abd058902be36606b9aa0554f95b7f6136a369ef20_prof);
 
     }
 
     // line 7
     public function block_title($context, array $blocks = array())
     {
-        $__internal_8e2a45ee9d408080da92c2866b0810d4742731dbfdd462084acd98715076d052 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_8e2a45ee9d408080da92c2866b0810d4742731dbfdd462084acd98715076d052->enter($__internal_8e2a45ee9d408080da92c2866b0810d4742731dbfdd462084acd98715076d052_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_b5e245cac7ec20f76231c29e83f476879bb8e13d1d439ae96b9faed1c4a6f0d1 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_b5e245cac7ec20f76231c29e83f476879bb8e13d1d439ae96b9faed1c4a6f0d1->enter($__internal_b5e245cac7ec20f76231c29e83f476879bb8e13d1d439ae96b9faed1c4a6f0d1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "ICT DATA MOROCCO";
         
-        $__internal_8e2a45ee9d408080da92c2866b0810d4742731dbfdd462084acd98715076d052->leave($__internal_8e2a45ee9d408080da92c2866b0810d4742731dbfdd462084acd98715076d052_prof);
+        $__internal_b5e245cac7ec20f76231c29e83f476879bb8e13d1d439ae96b9faed1c4a6f0d1->leave($__internal_b5e245cac7ec20f76231c29e83f476879bb8e13d1d439ae96b9faed1c4a6f0d1_prof);
 
     }
 
     // line 8
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_f581bf0b6e762717b92b77c6bc9fa1a4e5da40d3cbabf552eed538754ab92bd7 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_f581bf0b6e762717b92b77c6bc9fa1a4e5da40d3cbabf552eed538754ab92bd7->enter($__internal_f581bf0b6e762717b92b77c6bc9fa1a4e5da40d3cbabf552eed538754ab92bd7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_f92b8b645ec9cac4a65b0067ea88f2ebb101f52e3eb05c256d76419c9ef721a3 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_f92b8b645ec9cac4a65b0067ea88f2ebb101f52e3eb05c256d76419c9ef721a3->enter($__internal_f92b8b645ec9cac4a65b0067ea88f2ebb101f52e3eb05c256d76419c9ef721a3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
         
-        $__internal_f581bf0b6e762717b92b77c6bc9fa1a4e5da40d3cbabf552eed538754ab92bd7->leave($__internal_f581bf0b6e762717b92b77c6bc9fa1a4e5da40d3cbabf552eed538754ab92bd7_prof);
+        $__internal_f92b8b645ec9cac4a65b0067ea88f2ebb101f52e3eb05c256d76419c9ef721a3->leave($__internal_f92b8b645ec9cac4a65b0067ea88f2ebb101f52e3eb05c256d76419c9ef721a3_prof);
 
     }
 
     // line 47
     public function block_body($context, array $blocks = array())
     {
-        $__internal_160d02c90bfaa6d46df06969d8f5fe8ce5493328c6ad643f219efd2fffe3408e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_160d02c90bfaa6d46df06969d8f5fe8ce5493328c6ad643f219efd2fffe3408e->enter($__internal_160d02c90bfaa6d46df06969d8f5fe8ce5493328c6ad643f219efd2fffe3408e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_26d9dcbe869d4b98f6e6553f1e9a53dd5ea9e01684a57e38c58cee6c760e4a4a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_26d9dcbe869d4b98f6e6553f1e9a53dd5ea9e01684a57e38c58cee6c760e4a4a->enter($__internal_26d9dcbe869d4b98f6e6553f1e9a53dd5ea9e01684a57e38c58cee6c760e4a4a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         
-        $__internal_160d02c90bfaa6d46df06969d8f5fe8ce5493328c6ad643f219efd2fffe3408e->leave($__internal_160d02c90bfaa6d46df06969d8f5fe8ce5493328c6ad643f219efd2fffe3408e_prof);
+        $__internal_26d9dcbe869d4b98f6e6553f1e9a53dd5ea9e01684a57e38c58cee6c760e4a4a->leave($__internal_26d9dcbe869d4b98f6e6553f1e9a53dd5ea9e01684a57e38c58cee6c760e4a4a_prof);
 
     }
 
-    // line 616
+    // line 631
     public function block_javascripts($context, array $blocks = array())
     {
-        $__internal_f808cf89e71534a9030c2c94d304fb704b4e2f7f9bbddd0ff09dc09137ed0527 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_f808cf89e71534a9030c2c94d304fb704b4e2f7f9bbddd0ff09dc09137ed0527->enter($__internal_f808cf89e71534a9030c2c94d304fb704b4e2f7f9bbddd0ff09dc09137ed0527_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_8182cbdaac28c65e8e981922394df717bab0024f3347d30d8c6ac04aa28c9ebd = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_8182cbdaac28c65e8e981922394df717bab0024f3347d30d8c6ac04aa28c9ebd->enter($__internal_8182cbdaac28c65e8e981922394df717bab0024f3347d30d8c6ac04aa28c9ebd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
         
-        $__internal_f808cf89e71534a9030c2c94d304fb704b4e2f7f9bbddd0ff09dc09137ed0527->leave($__internal_f808cf89e71534a9030c2c94d304fb704b4e2f7f9bbddd0ff09dc09137ed0527_prof);
+        $__internal_8182cbdaac28c65e8e981922394df717bab0024f3347d30d8c6ac04aa28c9ebd->leave($__internal_8182cbdaac28c65e8e981922394df717bab0024f3347d30d8c6ac04aa28c9ebd_prof);
 
     }
 
@@ -932,7 +947,7 @@ class __TwigTemplate_1e11e19ebcf55f4941897846e0e9c65dcfb0a41975fe448320b35288ca0
 
     public function getDebugInfo()
     {
-        return array (  913 => 616,  902 => 47,  891 => 8,  879 => 7,  869 => 617,  867 => 616,  863 => 615,  859 => 614,  855 => 613,  851 => 612,  847 => 611,  843 => 610,  830 => 600,  820 => 593,  808 => 584,  799 => 578,  785 => 567,  756 => 541,  748 => 536,  737 => 528,  731 => 525,  722 => 519,  711 => 511,  705 => 508,  699 => 505,  693 => 502,  687 => 499,  679 => 494,  665 => 483,  659 => 480,  650 => 474,  639 => 466,  633 => 463,  627 => 460,  621 => 457,  615 => 454,  607 => 449,  594 => 439,  588 => 436,  582 => 433,  576 => 430,  570 => 427,  562 => 422,  548 => 411,  518 => 384,  511 => 380,  504 => 376,  496 => 371,  485 => 363,  478 => 359,  472 => 356,  464 => 351,  453 => 343,  447 => 340,  439 => 335,  425 => 324,  419 => 321,  413 => 318,  407 => 315,  399 => 310,  387 => 301,  380 => 297,  374 => 294,  366 => 289,  353 => 279,  347 => 276,  341 => 273,  335 => 270,  329 => 267,  321 => 262,  307 => 251,  157 => 104,  136 => 86,  123 => 76,  93 => 48,  91 => 47,  53 => 12,  49 => 11,  45 => 10,  40 => 9,  38 => 8,  34 => 7,  26 => 1,);
+        return array (  928 => 631,  917 => 47,  906 => 8,  894 => 7,  884 => 632,  882 => 631,  878 => 630,  874 => 629,  870 => 628,  866 => 627,  862 => 626,  858 => 625,  845 => 615,  835 => 608,  823 => 599,  814 => 593,  800 => 582,  771 => 556,  763 => 551,  752 => 543,  746 => 540,  737 => 534,  726 => 526,  720 => 523,  714 => 520,  708 => 517,  702 => 514,  694 => 509,  680 => 498,  674 => 495,  665 => 489,  654 => 481,  648 => 478,  642 => 475,  636 => 472,  630 => 469,  622 => 464,  609 => 454,  603 => 451,  597 => 448,  591 => 445,  585 => 442,  577 => 437,  563 => 426,  533 => 399,  526 => 395,  519 => 391,  511 => 386,  500 => 378,  493 => 374,  487 => 371,  479 => 366,  468 => 358,  462 => 355,  454 => 350,  440 => 339,  434 => 336,  428 => 333,  422 => 330,  414 => 325,  402 => 316,  395 => 312,  389 => 309,  381 => 304,  368 => 294,  362 => 291,  356 => 288,  350 => 285,  344 => 282,  336 => 277,  322 => 266,  157 => 104,  136 => 86,  123 => 76,  93 => 48,  91 => 47,  53 => 12,  49 => 11,  45 => 10,  40 => 9,  38 => 8,  34 => 7,  26 => 1,);
     }
 
     public function getSource()
@@ -1118,6 +1133,21 @@ class __TwigTemplate_1e11e19ebcf55f4941897846e0e9c65dcfb0a41975fe448320b35288ca0
                 </div>
             </div>
         </div>
+    </section>
+    <section class=\"success\" >
+        <div class=\"container\">
+            <div class=\"row\">
+            <div class=\"col-lg-12 text-center\">
+            <div class=\"nine columns centered text-centered\">
+                <h2>Administration space</h2>
+                <p class=\"subheading\">
+                    this space is reserved for Administrators
+                </p>
+                <a class=\"btn btn-success btn-lg\" href=\"\" >Admin</a>
+            </div>
+        </div>
+                </div>
+            </div>
     </section>
     <footer class=\"text-center\">
         <div class=\"footer-above\">
