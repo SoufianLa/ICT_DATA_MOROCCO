@@ -22,9 +22,9 @@ class D_taux_penetration
     private $id;
 
     /**
-     * @var float
+     * @var date
      *
-     * @ORM\Column(name="t_date", type="float")
+     * @ORM\Column(name="t_date", type="date")
      */
     private $tDate;
 
@@ -70,7 +70,7 @@ class D_taux_penetration
     /**
      * Set tDate
      *
-     * @param float $tDate
+     * @param date $tDate
      * @return D_taux_penetration
      */
     public function setTDate($tDate)
@@ -83,7 +83,7 @@ class D_taux_penetration
     /**
      * Get tDate
      *
-     * @return float 
+     * @return date
      */
     public function getTDate()
     {

@@ -1,5 +1,5 @@
 ictdata_homepage:
-    path:     /
+    path:     /index
     defaults: { _controller: IctdataBundle:Ictdata:index }
 ictdata_grapheMobile:
     path:     /grm
@@ -7,3 +7,12 @@ ictdata_grapheMobile:
 ictdata_grapheFixe:
     path:     /grf
     defaults: { _controller: IctdataBundle:Ictdata:grapheFixe }
+ictdata_spaceadmin:
+    path:     /adminspace
+    defaults: { _controller: IctdataBundle:Ictdata:adminspace }
+ictdata_showdata:
+    path:     /showdata
+    defaults: { _controller: IctdataBundle:Ictdata:showdata }
+ictdata_recherche:
+    path:     /recherche/{a}/{b}
+    defaults: { _controller: IctdataBundle:Ictdata:recherche }

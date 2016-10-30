@@ -12,4 +12,17 @@ use Doctrine\ORM\EntityRepository;
  */
 class E_enqueteRepository extends EntityRepository
 {
+public function findByAuthorAndDate($author, $year)
+        {
+            $qb = $this->createQueryBuilder('e');
+            $qb->where('e.author = :author')
+                ->setParameter('author', $author)
+                ->andWhere('e.date < :year')
+                ->setParameter('year', $year)
+                ->orderBy('e.date', 'DESC');
+            return $qb
+                ->getQuery()
+                ->getResult()
+                ;
+        }
 }

@@ -22,9 +22,9 @@ class D_part_marche
     private $id;
 
     /**
-     * @var float
+     * @var date
      *
-     * @ORM\Column(name="part_date", type="float")
+     * @ORM\Column(name="part_date", type="date")
      */
     private $partDate;
 
@@ -148,9 +148,9 @@ class D_part_marche
     private $partParcInternetAdslMed;
 
     /**
-     * @var string
+     * @var float
      *
-     * @ORM\Column(name="part_parc_internet_mobile_med", type="string", length=255)
+     * @ORM\Column(name="part_parc_internet_mobile_med", type="float")
      */
     private $partParcInternetMobileMed;
 
@@ -168,7 +168,7 @@ class D_part_marche
     /**
      * Set partDate
      *
-     * @param float $partDate
+     * @param date $partDate
      * @return D_part_marche
      */
     public function setPartDate($partDate)
@@ -181,7 +181,7 @@ class D_part_marche
     /**
      * Get partDate
      *
-     * @return float 
+     * @return date
      */
     public function getPartDate()
     {
@@ -582,7 +582,7 @@ class D_part_marche
     /**
      * Set partParcInternetMobileMed
      *
-     * @param string $partParcInternetMobileMed
+     * @param float $partParcInternetMobileMed
      * @return D_part_marche
      */
     public function setPartParcInternetMobileMed($partParcInternetMobileMed)
@@ -595,7 +595,7 @@ class D_part_marche
     /**
      * Get partParcInternetMobileMed
      *
-     * @return string 
+     * @return float
      */
     public function getPartParcInternetMobileMed()
     {

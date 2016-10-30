@@ -1,0 +1,4 @@
+services:
+#    chart.example:
+#        class: Ictdatachart\chartBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

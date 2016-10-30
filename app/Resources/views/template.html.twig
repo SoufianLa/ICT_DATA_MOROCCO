@@ -21,7 +21,7 @@
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand" href="/login">ANRT</a>
+            <a class="navbar-brand" href="">ANRT</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -180,7 +180,7 @@
             </div>
         </div>
     </section>
-    <section class="success" >
+    <section class="sccess" >
         <div class="container">
             <div class="row">
             <div class="col-lg-12 text-center">
@@ -189,7 +189,8 @@
                 <p class="subheading">
                     this space is reserved for Administrators
                 </p>
-                <a class="btn btn-success btn-lg" href="" >Admin</a>
+                <br />
+                <a class="btn btn-success btn-lg" href="{{ path('fos_user_security_login') }}" >Admin</a>
             </div>
         </div>
                 </div>
@@ -439,7 +440,7 @@
                         <div id = "collapseThree1m" class = "panel-collapse collapse">
                             <div class = "panel-body">
                                 <div class="row">
-                                    <div class="img-hover"><div class="col-lg-12"><a href="#"><img src="{{ asset('img/portfolio/transparent/1.png') }}"  height="38" width="200" alt=""></a></div>
+                                    <div class="img-hover"><div class="col-lg-12"><a href="{{ path('chart_homepage') }}"><img src="{{ asset('img/portfolio/transparent/1.png') }}"  height="38" width="200" alt=""></a></div>
                                     </div></div>
                                 <div class="row">
                                     <div class="img-hover"><div class="col-lg-12"><a href="#"><img src="{{ asset('img/portfolio/transparent/2.png') }}"  height="38" width="200" alt=""></a></div>

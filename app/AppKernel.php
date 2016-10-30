@@ -20,6 +20,8 @@ class AppKernel extends Kernel
             new Ictdata\IctdataBundle\IctdataBundle(),
             new FOS\UserBundle\FOSUserBundle(),
             new Utilisateurs\UtilisateursBundle\UtilisateursBundle(),
+            new Ob\HighchartsBundle\ObHighchartsBundle(),
+            new Ictdatachart\chartBundle\chartBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {

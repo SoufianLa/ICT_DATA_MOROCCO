@@ -22,9 +22,9 @@ class D_trafic
     private $id;
 
     /**
-     * @var float
+     * @var date
      *
-     * @ORM\Column(name="tra_date", type="float")
+     * @ORM\Column(name="tra_date", type="date")
      */
     private $traDate;
 
@@ -63,7 +63,7 @@ class D_trafic
     /**
      * Set traDate
      *
-     * @param float $traDate
+     * @param date $traDate
      * @return D_trafic
      */
     public function setTraDate($traDate)
@@ -76,7 +76,7 @@ class D_trafic
     /**
      * Get traDate
      *
-     * @return float 
+     * @return date
      */
     public function getTraDate()
     {
