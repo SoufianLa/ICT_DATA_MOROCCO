@@ -22,51 +22,57 @@ class __TwigTemplate_33e6c63776aaea1d385d0780b5d90214f3846a7c2a4cd17314eb6c5950f
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_52a678624f16ec91772c3a68f9d29939f25ea498734b33203bbabfff63fff74a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_52a678624f16ec91772c3a68f9d29939f25ea498734b33203bbabfff63fff74a->enter($__internal_52a678624f16ec91772c3a68f9d29939f25ea498734b33203bbabfff63fff74a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "chartBundle:Default:chartemobile.html.twig"));
+        $__internal_e29429e05c50b86f688ee30b6b3c4cb505feb9b03c79581d37c7da4dbb97068a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_e29429e05c50b86f688ee30b6b3c4cb505feb9b03c79581d37c7da4dbb97068a->enter($__internal_e29429e05c50b86f688ee30b6b3c4cb505feb9b03c79581d37c7da4dbb97068a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "chartBundle:Default:chartemobile.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_52a678624f16ec91772c3a68f9d29939f25ea498734b33203bbabfff63fff74a->leave($__internal_52a678624f16ec91772c3a68f9d29939f25ea498734b33203bbabfff63fff74a_prof);
+        $__internal_e29429e05c50b86f688ee30b6b3c4cb505feb9b03c79581d37c7da4dbb97068a->leave($__internal_e29429e05c50b86f688ee30b6b3c4cb505feb9b03c79581d37c7da4dbb97068a_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_5a61a76ef899f27ae5f8f082afa84b3ca6811bc0dc2679487f3010b19ffe8d26 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_5a61a76ef899f27ae5f8f082afa84b3ca6811bc0dc2679487f3010b19ffe8d26->enter($__internal_5a61a76ef899f27ae5f8f082afa84b3ca6811bc0dc2679487f3010b19ffe8d26_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "chartBundle:Default:chartemobile.html.twig"));
+        $__internal_b52a2694bbae5585af876610f603b97ffbd3acb71a8dc489d5475dfa80bf5e94 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_b52a2694bbae5585af876610f603b97ffbd3acb71a8dc489d5475dfa80bf5e94->enter($__internal_b52a2694bbae5585af876610f603b97ffbd3acb71a8dc489d5475dfa80bf5e94_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "chartBundle:Default:chartemobile.html.twig"));
 
         // line 4
-        echo "    <br /><br /><br /><br />
+        echo "<br /><br /><br /><br />
 <div id=\"linechart\" style=\"min-width: 400px; height: 510px; margin: 0 auto\"></div>
+<br /><br /><br /><br />
+<div id=\"linechart_column\" style=\"min-width: 400px; height: 510px; margin: 0 auto\"></div>
 ";
         
-        $__internal_5a61a76ef899f27ae5f8f082afa84b3ca6811bc0dc2679487f3010b19ffe8d26->leave($__internal_5a61a76ef899f27ae5f8f082afa84b3ca6811bc0dc2679487f3010b19ffe8d26_prof);
+        $__internal_b52a2694bbae5585af876610f603b97ffbd3acb71a8dc489d5475dfa80bf5e94->leave($__internal_b52a2694bbae5585af876610f603b97ffbd3acb71a8dc489d5475dfa80bf5e94_prof);
 
     }
 
-    // line 7
+    // line 9
     public function block_javascripts($context, array $blocks = array())
     {
-        $__internal_18c141f11dbad2dbfabc0b4660c2ea0db578cfb6551324073408ce7596cfe754 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_18c141f11dbad2dbfabc0b4660c2ea0db578cfb6551324073408ce7596cfe754->enter($__internal_18c141f11dbad2dbfabc0b4660c2ea0db578cfb6551324073408ce7596cfe754_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "chartBundle:Default:chartemobile.html.twig"));
+        $__internal_64ba7f363baadd74679ab377cbbedaef88925d245962404a6372fc226814d573 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_64ba7f363baadd74679ab377cbbedaef88925d245962404a6372fc226814d573->enter($__internal_64ba7f363baadd74679ab377cbbedaef88925d245962404a6372fc226814d573_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "chartBundle:Default:chartemobile.html.twig"));
 
-        // line 8
+        // line 10
         echo "
     <script src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js\" type=\"text/javascript\"></script>
     <script src=\"//code.highcharts.com/4.1.8/highcharts.js\"></script>
     <script src=\"//code.highcharts.com/4.1.8/modules/exporting.js\"></script>
     <script type=\"text/javascript\">
         ";
-        // line 13
+        // line 15
         echo $this->env->getExtension('Ob\HighchartsBundle\Twig\HighchartsExtension')->chart((isset($context["chartemobile"]) ? $context["chartemobile"] : $this->getContext($context, "chartemobile")));
+        echo "
+        ";
+        // line 16
+        echo $this->env->getExtension('Ob\HighchartsBundle\Twig\HighchartsExtension')->chart((isset($context["chartemobile_column"]) ? $context["chartemobile_column"] : $this->getContext($context, "chartemobile_column")));
         echo "
     </script>
 
 ";
         
-        $__internal_18c141f11dbad2dbfabc0b4660c2ea0db578cfb6551324073408ce7596cfe754->leave($__internal_18c141f11dbad2dbfabc0b4660c2ea0db578cfb6551324073408ce7596cfe754_prof);
+        $__internal_64ba7f363baadd74679ab377cbbedaef88925d245962404a6372fc226814d573->leave($__internal_64ba7f363baadd74679ab377cbbedaef88925d245962404a6372fc226814d573_prof);
 
     }
 
@@ -82,7 +88,7 @@ class __TwigTemplate_33e6c63776aaea1d385d0780b5d90214f3846a7c2a4cd17314eb6c5950f
 
     public function getDebugInfo()
     {
-        return array (  63 => 13,  56 => 8,  50 => 7,  41 => 4,  35 => 3,  11 => 1,);
+        return array (  69 => 16,  65 => 15,  58 => 10,  52 => 9,  41 => 4,  35 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -98,8 +104,10 @@ class __TwigTemplate_33e6c63776aaea1d385d0780b5d90214f3846a7c2a4cd17314eb6c5950f
         return new Twig_Source("{% extends '::base.html.twig' %}
 
 {% block body %}
-    <br /><br /><br /><br />
+<br /><br /><br /><br />
 <div id=\"linechart\" style=\"min-width: 400px; height: 510px; margin: 0 auto\"></div>
+<br /><br /><br /><br />
+<div id=\"linechart_column\" style=\"min-width: 400px; height: 510px; margin: 0 auto\"></div>
 {% endblock %}
 {% block javascripts %}
 
@@ -108,6 +116,7 @@ class __TwigTemplate_33e6c63776aaea1d385d0780b5d90214f3846a7c2a4cd17314eb6c5950f
     <script src=\"//code.highcharts.com/4.1.8/modules/exporting.js\"></script>
     <script type=\"text/javascript\">
         {{ chart(chartemobile) }}
+        {{ chart(chartemobile_column) }}
     </script>
 
 {% endblock %}", "chartBundle:Default:chartemobile.html.twig", "C:\\xampp\\htdocs\\ICT_DATA_MOROCCO\\src\\Ictdatachart\\chartBundle/Resources/views/Default/chartemobile.html.twig");

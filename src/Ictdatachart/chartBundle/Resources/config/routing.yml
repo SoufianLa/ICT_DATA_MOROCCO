@@ -4,3 +4,6 @@ chart_homepage:
 chart_emobile:
     path:     /chartemobile
     defaults: { _controller: chartBundle:Chartemobile:chartemobile }
+chart_efixe:
+    path:     /chartefixe
+    defaults: { _controller: chartBundle:Chartemobile:chartefixe }
