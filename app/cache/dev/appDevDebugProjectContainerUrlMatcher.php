@@ -127,9 +127,17 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
         }
 
-        // chart_homepage
-        if ($pathinfo === '/chart') {
-            return array (  '_controller' => 'Ictdatachart\\chartBundle\\Controller\\DefaultController::chartAction',  '_route' => 'chart_homepage',);
+        if (0 === strpos($pathinfo, '/chart')) {
+            // chart_homepage
+            if ($pathinfo === '/chart') {
+                return array (  '_controller' => 'Ictdatachart\\chartBundle\\Controller\\DefaultController::chartAction',  '_route' => 'chart_homepage',);
+            }
+
+            // chart_emobile
+            if ($pathinfo === '/chartemobile') {
+                return array (  '_controller' => 'Ictdatachart\\chartBundle\\Controller\\ChartemobileController::chartemobileAction',  '_route' => 'chart_emobile',);
+            }
+
         }
 
         if (0 === strpos($pathinfo, '/log')) {

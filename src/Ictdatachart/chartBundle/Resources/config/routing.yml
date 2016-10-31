@@ -1,3 +1,6 @@
 chart_homepage:
     path:     /chart
     defaults: { _controller: chartBundle:Default:chart }
+chart_emobile:
+    path:     /chartemobile
+    defaults: { _controller: chartBundle:Chartemobile:chartemobile }

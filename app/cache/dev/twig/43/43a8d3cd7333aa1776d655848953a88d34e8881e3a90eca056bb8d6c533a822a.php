@@ -22,56 +22,73 @@ class __TwigTemplate_b1734700e0db1d841e740d53e72cf39e5fcfe614bf0dd39334291dcfaff
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_b0663fa92b498c42dba0022b3ec5603a222a22b5b14db8eab542ec906ef2d503 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_b0663fa92b498c42dba0022b3ec5603a222a22b5b14db8eab542ec906ef2d503->enter($__internal_b0663fa92b498c42dba0022b3ec5603a222a22b5b14db8eab542ec906ef2d503_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "chartBundle:Default:chart.html.twig"));
+        $__internal_36605ca63054bfb62f4c2114d8a8b1cc2eae6bf0995df62f7784e5c89edff7db = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_36605ca63054bfb62f4c2114d8a8b1cc2eae6bf0995df62f7784e5c89edff7db->enter($__internal_36605ca63054bfb62f4c2114d8a8b1cc2eae6bf0995df62f7784e5c89edff7db_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "chartBundle:Default:chart.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_b0663fa92b498c42dba0022b3ec5603a222a22b5b14db8eab542ec906ef2d503->leave($__internal_b0663fa92b498c42dba0022b3ec5603a222a22b5b14db8eab542ec906ef2d503_prof);
+        $__internal_36605ca63054bfb62f4c2114d8a8b1cc2eae6bf0995df62f7784e5c89edff7db->leave($__internal_36605ca63054bfb62f4c2114d8a8b1cc2eae6bf0995df62f7784e5c89edff7db_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_fb11c48a27baba87aa15c9740f3cd342425e11bb913d3ba4f6fc6becb7ff62b1 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_fb11c48a27baba87aa15c9740f3cd342425e11bb913d3ba4f6fc6becb7ff62b1->enter($__internal_fb11c48a27baba87aa15c9740f3cd342425e11bb913d3ba4f6fc6becb7ff62b1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "chartBundle:Default:chart.html.twig"));
+        $__internal_e37852d1afadee35c268c775ce0de78e7974fd7784654143d27bb931b18484e1 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_e37852d1afadee35c268c775ce0de78e7974fd7784654143d27bb931b18484e1->enter($__internal_e37852d1afadee35c268c775ce0de78e7974fd7784654143d27bb931b18484e1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "chartBundle:Default:chart.html.twig"));
 
         // line 4
         echo "<div id=\"linechart\" style=\"min-width: 400px; height: 400px; margin: 0 auto\"></div>
 <br \\><br \\><br \\>
 <div id=\"piechart\" style=\"min-width: 400px; height: 400px; margin: 0 auto\"></div>
+<br \\><br \\><br \\>
+<div id=\"cont\" style=\"min-width: 400px; height: 400px; margin: 0 auto\"></div>
+<br \\><br \\><br \\>
+<div id=\"con\" style=\"min-width: 400px; height: 400px; margin: 0 auto\"></div>
+<div id=\"overviewchart\"></div>
 ";
         
-        $__internal_fb11c48a27baba87aa15c9740f3cd342425e11bb913d3ba4f6fc6becb7ff62b1->leave($__internal_fb11c48a27baba87aa15c9740f3cd342425e11bb913d3ba4f6fc6becb7ff62b1_prof);
+        $__internal_e37852d1afadee35c268c775ce0de78e7974fd7784654143d27bb931b18484e1->leave($__internal_e37852d1afadee35c268c775ce0de78e7974fd7784654143d27bb931b18484e1_prof);
 
     }
 
-    // line 8
+    // line 13
     public function block_javascripts($context, array $blocks = array())
     {
-        $__internal_ddd91e2e75c78a1d8b3292968211a192d7bbbda99e0c8d33403401cc0d9cae55 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_ddd91e2e75c78a1d8b3292968211a192d7bbbda99e0c8d33403401cc0d9cae55->enter($__internal_ddd91e2e75c78a1d8b3292968211a192d7bbbda99e0c8d33403401cc0d9cae55_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "chartBundle:Default:chart.html.twig"));
+        $__internal_7c2cf9bbe9dc06bd2f2fb1694fd5abb5cab25df286b8545e3eac248cbf397e14 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_7c2cf9bbe9dc06bd2f2fb1694fd5abb5cab25df286b8545e3eac248cbf397e14->enter($__internal_7c2cf9bbe9dc06bd2f2fb1694fd5abb5cab25df286b8545e3eac248cbf397e14_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "chartBundle:Default:chart.html.twig"));
 
-        // line 9
+        // line 14
         echo "
     <script src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js\" type=\"text/javascript\"></script>
     <script src=\"//code.highcharts.com/4.1.8/highcharts.js\"></script>
     <script src=\"//code.highcharts.com/4.1.8/modules/exporting.js\"></script>
     <script type=\"text/javascript\">
         ";
-        // line 14
+        // line 19
         echo $this->env->getExtension('Ob\HighchartsBundle\Twig\HighchartsExtension')->chart((isset($context["chart"]) ? $context["chart"] : $this->getContext($context, "chart")));
         echo "
         ";
-        // line 15
+        // line 20
         echo $this->env->getExtension('Ob\HighchartsBundle\Twig\HighchartsExtension')->chart((isset($context["pie"]) ? $context["pie"] : $this->getContext($context, "pie")));
+        echo "
+        ";
+        // line 21
+        echo $this->env->getExtension('Ob\HighchartsBundle\Twig\HighchartsExtension')->chart((isset($context["newchart"]) ? $context["newchart"] : $this->getContext($context, "newchart")));
+        echo "
+        ";
+        // line 22
+        echo $this->env->getExtension('Ob\HighchartsBundle\Twig\HighchartsExtension')->chart((isset($context["newchart2"]) ? $context["newchart2"] : $this->getContext($context, "newchart2")));
+        echo "
+        ";
+        // line 23
+        echo $this->env->getExtension('Ob\HighchartsBundle\Twig\HighchartsExtension')->chart((isset($context["uni"]) ? $context["uni"] : $this->getContext($context, "uni")));
         echo "
     </script>
 
 ";
         
-        $__internal_ddd91e2e75c78a1d8b3292968211a192d7bbbda99e0c8d33403401cc0d9cae55->leave($__internal_ddd91e2e75c78a1d8b3292968211a192d7bbbda99e0c8d33403401cc0d9cae55_prof);
+        $__internal_7c2cf9bbe9dc06bd2f2fb1694fd5abb5cab25df286b8545e3eac248cbf397e14->leave($__internal_7c2cf9bbe9dc06bd2f2fb1694fd5abb5cab25df286b8545e3eac248cbf397e14_prof);
 
     }
 
@@ -87,7 +104,7 @@ class __TwigTemplate_b1734700e0db1d841e740d53e72cf39e5fcfe614bf0dd39334291dcfaff
 
     public function getDebugInfo()
     {
-        return array (  68 => 15,  64 => 14,  57 => 9,  51 => 8,  41 => 4,  35 => 3,  11 => 1,);
+        return array (  85 => 23,  81 => 22,  77 => 21,  73 => 20,  69 => 19,  62 => 14,  56 => 13,  41 => 4,  35 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -106,6 +123,11 @@ class __TwigTemplate_b1734700e0db1d841e740d53e72cf39e5fcfe614bf0dd39334291dcfaff
 <div id=\"linechart\" style=\"min-width: 400px; height: 400px; margin: 0 auto\"></div>
 <br \\><br \\><br \\>
 <div id=\"piechart\" style=\"min-width: 400px; height: 400px; margin: 0 auto\"></div>
+<br \\><br \\><br \\>
+<div id=\"cont\" style=\"min-width: 400px; height: 400px; margin: 0 auto\"></div>
+<br \\><br \\><br \\>
+<div id=\"con\" style=\"min-width: 400px; height: 400px; margin: 0 auto\"></div>
+<div id=\"overviewchart\"></div>
 {% endblock %}
 {% block javascripts %}
 
@@ -115,6 +137,9 @@ class __TwigTemplate_b1734700e0db1d841e740d53e72cf39e5fcfe614bf0dd39334291dcfaff
     <script type=\"text/javascript\">
         {{ chart(chart) }}
         {{ chart(pie) }}
+        {{ chart(newchart) }}
+        {{ chart(newchart2) }}
+        {{ chart(uni) }}
     </script>
 
 {% endblock %}", "chartBundle:Default:chart.html.twig", "C:\\xampp\\htdocs\\ICT_DATA_MOROCCO\\src\\Ictdatachart\\chartBundle/Resources/views/Default/chart.html.twig");

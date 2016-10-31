@@ -4,6 +4,11 @@
 <div id="linechart" style="min-width: 400px; height: 400px; margin: 0 auto"></div>
 <br \><br \><br \>
 <div id="piechart" style="min-width: 400px; height: 400px; margin: 0 auto"></div>
+<br \><br \><br \>
+<div id="cont" style="min-width: 400px; height: 400px; margin: 0 auto"></div>
+<br \><br \><br \>
+<div id="con" style="min-width: 400px; height: 400px; margin: 0 auto"></div>
+<div id="overviewchart"></div>
 {% endblock %}
 {% block javascripts %}
 
@@ -13,6 +18,9 @@
     <script type="text/javascript">
         {{ chart(chart) }}
         {{ chart(pie) }}
+        {{ chart(newchart) }}
+        {{ chart(newchart2) }}
+        {{ chart(uni) }}
     </script>
 
 {% endblock %}
