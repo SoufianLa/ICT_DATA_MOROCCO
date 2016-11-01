@@ -62,6 +62,12 @@ class E_enquete
      * @ORM\Column(name="e_individus_smartphone", type="float")
      */
     private $eIndividusSmartphone;
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="e_menagesequ_ordinateur", type="float")
+     */
+    private $eMenagesequOrdinateur;
 
     /**
      * @var float
@@ -267,7 +273,28 @@ class E_enquete
     {
         return $this->eIndividusSmartphone;
     }
+    /**
+     * Set eMenagesequOrdinateur
+     *
+     * @param float $eMenagesequOrdinateur
+     * @return E_enquete
+     */
+    public function setEMenagesequOrdinateur($eMenagesequOrdinateur)
+    {
+        $this->eMenagesequOrdinateur = $eMenagesequOrdinateur;
 
+        return $this;
+    }
+
+    /**
+     * Get eMenagesequOrdinateur
+     *
+     * @return float
+     */
+    public function getEMenagesequOrdinateur()
+    {
+        return $this->eMenagesequOrdinateur;
+    }
     /**
      * Set eMenagesOrdinateurBureau
      *

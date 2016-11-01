@@ -7,3 +7,9 @@ chart_emobile:
 chart_efixe:
     path:     /chartefixe
     defaults: { _controller: chartBundle:Chartemobile:chartefixe }
+chart_ecomputer:
+    path:     /chartecomp
+    defaults: { _controller: chartBundle:Chartemobile:chartecomputer }
+chart_einternet:
+    path:     /charteint
+    defaults: { _controller: chartBundle:Chartemobile:charteinternet }

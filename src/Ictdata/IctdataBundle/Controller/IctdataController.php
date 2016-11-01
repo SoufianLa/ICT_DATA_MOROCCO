@@ -33,6 +33,7 @@ class IctdataController extends Controller
                     ->add("eIndividusMobile", "number")
                     ->add("eIndividusMobileInternet", "number")
                     ->add("eIndividusSmartphone", "number")
+                    ->add("eMenagesequOrdinateur", "number")
                     ->add("eMenagesOrdinateurBureau", "number")
                     ->add("eMenagesOrdinateurPc", "number")
                     ->add("eMenagesOrdinateurTablette", "number")
