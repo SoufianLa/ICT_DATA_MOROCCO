@@ -4,6 +4,7 @@ namespace Ictdata\IctdataBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Ictdata\IctdataBundle\Entity\E_enquete;
+use Ictdata\IctdataBundle\Entity\D_parc_abonne;
 use Symfony\Component\HttpFoundation\Request;
 
 class IctdataController extends Controller
@@ -23,7 +24,7 @@ class IctdataController extends Controller
 
         return $this->render('IctdataBundle:Default:grapheFixe.html.twig', array());
     }
-    public function adminspaceAction(Request $requete)
+    public function formenqueteAction(Request $requete)
     {
         $enquete = new E_enquete();
         $form = $this->createFormBuilder($enquete)
@@ -64,5 +65,35 @@ class IctdataController extends Controller
         $resultofsearch = $em->getRepository("IctdataBundle:E_enquete")->recherche($a, $b);
 
         return $this->render('IctdataBundle:Default:recherche.html.twig', array('resultofsearch' => $resultofsearch));
+    }
+    public function forme_d_parcabonnAction(Request $requete)
+    {
+        $parc_abonn = new D_parc_abonne();
+        $form = $this->createFormBuilder($parc_abonn)
+            ->add("pDate", "date")
+            ->add("pMobilePostPaye", "number")
+            ->add("pMobilePrePaye", "number")
+            ->add("pFixeGlobal", "number")
+            ->add("pFixeMobiliteRestreinte", "number")
+            ->add("pFixeResidentiel", "number")
+            ->add("pFixeProfessionnel", "number")
+            ->add("pPubliphoneLignes", "number")
+            ->add("pInternetGlobaleAdsl", "number")
+            ->add("pInternetGlobaleMobile", "number")
+            ->add("pInternetGlobaleAutre", "number")
+            ->add("pInternetBasdebit", "number")
+            ->add("pInternet", "number")
+            ->add("pNomDomainMa", "number")
+            ->add("pRepartMa", "number")
+            ->add("pRepartAutre", "number")
+            ->add("Add", "submit")
+            ->getForm();
+        $form->handleRequest($requete);
+        if($form->isValid()){
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($parc_abonn);
+            $em->flush();
+        }
+        return $this->render('IctdataBundle:Default:form_pabonn.html.twig', array('f_parcabonn' => $form->createView()));
     }
 }

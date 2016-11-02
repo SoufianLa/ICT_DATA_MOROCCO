@@ -8,8 +8,11 @@ ictdata_grapheFixe:
     path:     /grf
     defaults: { _controller: IctdataBundle:Ictdata:grapheFixe }
 ictdata_spaceadmin:
-    path:     /adminspace
-    defaults: { _controller: IctdataBundle:Ictdata:adminspace }
+    path:     /formenquete
+    defaults: { _controller: IctdataBundle:Ictdata:formenquete }
+ictdata_parcabonn:
+    path:     /form_parcabonn
+    defaults: { _controller: IctdataBundle:Ictdata:forme_d_parcabonn }
 ictdata_showdata:
     path:     /showdata
     defaults: { _controller: IctdataBundle:Ictdata:showdata }

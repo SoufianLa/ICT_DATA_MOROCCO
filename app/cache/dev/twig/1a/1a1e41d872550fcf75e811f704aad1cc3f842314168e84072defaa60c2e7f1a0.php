@@ -21,30 +21,30 @@ class __TwigTemplate_92cdd507e8eae6617f6240a4399ee394b8b66ec310eab0a8d308fc88527
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_e7ec1b574acf7512e22bc644701e170df029fdb9341375f3d613d8635530a3f6 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_e7ec1b574acf7512e22bc644701e170df029fdb9341375f3d613d8635530a3f6->enter($__internal_e7ec1b574acf7512e22bc644701e170df029fdb9341375f3d613d8635530a3f6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "IctdataBundle:Default:adminspace.html.twig"));
+        $__internal_78115a3372843017067fba5779962d74e7b1e5365282812eb4d10f3298f05fb3 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_78115a3372843017067fba5779962d74e7b1e5365282812eb4d10f3298f05fb3->enter($__internal_78115a3372843017067fba5779962d74e7b1e5365282812eb4d10f3298f05fb3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "IctdataBundle:Default:adminspace.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_e7ec1b574acf7512e22bc644701e170df029fdb9341375f3d613d8635530a3f6->leave($__internal_e7ec1b574acf7512e22bc644701e170df029fdb9341375f3d613d8635530a3f6_prof);
+        $__internal_78115a3372843017067fba5779962d74e7b1e5365282812eb4d10f3298f05fb3->leave($__internal_78115a3372843017067fba5779962d74e7b1e5365282812eb4d10f3298f05fb3_prof);
 
     }
 
     // line 2
     public function block_body($context, array $blocks = array())
     {
-        $__internal_2d72b66e49275ec2d80be1bc35ee7f86b94f7d89172f5ffe21ad610e057927b9 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_2d72b66e49275ec2d80be1bc35ee7f86b94f7d89172f5ffe21ad610e057927b9->enter($__internal_2d72b66e49275ec2d80be1bc35ee7f86b94f7d89172f5ffe21ad610e057927b9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "IctdataBundle:Default:adminspace.html.twig"));
+        $__internal_1ea3701f406dc4147ac8615f4cc88bf5e0ec684001200d50d5b27d689275cd16 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_1ea3701f406dc4147ac8615f4cc88bf5e0ec684001200d50d5b27d689275cd16->enter($__internal_1ea3701f406dc4147ac8615f4cc88bf5e0ec684001200d50d5b27d689275cd16_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "IctdataBundle:Default:adminspace.html.twig"));
 
         // line 3
-        echo "    Admin space  <br />
+        echo "    <h1>Formulaire d'enquete : </h1><br />
     ";
         // line 4
         echo         $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderer->renderBlock((isset($context["f"]) ? $context["f"] : $this->getContext($context, "f")), 'form');
         echo "
 ";
         
-        $__internal_2d72b66e49275ec2d80be1bc35ee7f86b94f7d89172f5ffe21ad610e057927b9->leave($__internal_2d72b66e49275ec2d80be1bc35ee7f86b94f7d89172f5ffe21ad610e057927b9_prof);
+        $__internal_1ea3701f406dc4147ac8615f4cc88bf5e0ec684001200d50d5b27d689275cd16->leave($__internal_1ea3701f406dc4147ac8615f4cc88bf5e0ec684001200d50d5b27d689275cd16_prof);
 
     }
 
@@ -75,7 +75,7 @@ class __TwigTemplate_92cdd507e8eae6617f6240a4399ee394b8b66ec310eab0a8d308fc88527
     {
         return new Twig_Source("{% extends '::base.html.twig' %}
 {% block body %}
-    Admin space  <br />
+    <h1>Formulaire d'enquete : </h1><br />
     {{ form(f) }}
 {% endblock %}", "IctdataBundle:Default:adminspace.html.twig", "C:\\xampp\\htdocs\\ICT_DATA_MOROCCO\\src\\Ictdata\\IctdataBundle/Resources/views/Default/adminspace.html.twig");
     }
