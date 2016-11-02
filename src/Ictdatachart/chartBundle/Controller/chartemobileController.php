@@ -193,18 +193,18 @@ class ChartemobileController extends Controller
         // Chart
         $series0 = array(
             array("name" => "Fixed Only",    "data" => $Minterfixe, "type" => "column"),
-            array("name" => "Fixed Only",    "data" => $Minterfixe, "type" => "spline"),
             array("name" => "Mobile internet only",    "data" => $Mintermobile, "type" => "column"),
-            array("name" => "Mobile internet only",    "data" => $Mintermobile, "type" => "spline"),
             array("name" => "Both",    "data" => $fixemobile, "type" => "column"),
-            array("name" => "Both",    "data" => $fixemobile, "type" => "spline"),
             array("name" => "Total",    "data" => $globe, "type" => "column"),
+            array("name" => "Fixed Only",    "data" => $Minterfixe, "type" => "spline"),
+            array("name" => "Mobile internet only",    "data" => $Mintermobile, "type" => "spline"),
+            array("name" => "Both",    "data" => $fixemobile, "type" => "spline"),
             array("name" => "Total",    "data" => $globe, "type" => "spline")
         );
         $series1 = array(
             array("name" => "Individuals who accessed internet",    "data" => $indivInter, "type" => "column"),
-            array("name" => "Individuals who accessed internet",    "data" => $indivInter, "type" => "spline"),
             array("name" => "Number of internet users",    "data" => $internaut, "type" => "column"),
+            array("name" => "Individuals who accessed internet",    "data" => $indivInter, "type" => "spline"),
             array("name" => "Number of internet users",    "data" => $internaut, "type" => "spline")
         );
         // chart1

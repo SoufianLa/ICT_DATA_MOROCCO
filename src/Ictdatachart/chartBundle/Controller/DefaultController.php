@@ -41,9 +41,9 @@ class DefaultController extends Controller
         // Chart
         $series = array(
             array("name" => "Ménages équipés d'un mobile",    "data" => $Mmobile),
-            array("name" => "Ménages équipés en mobile",    "data" => $Imobile ),
-            array("name" => "Individus utilisant internet mobile / équipés mobile",    "data" => $Iimobile),
-            array("name" => "Ménages équipés en smartphone / équipés mobile",    "data" => $smartphone)
+            array("name" => "Ménages équipés en mobile",    "data" => $Imobile),
+            //array("name" => "Individus utilisant internet mobile / équipés mobile",    "data" => $Iimobile),
+            //array("name" => "Ménages équipés en smartphone / équipés mobile",    "data" => $smartphone)
         );
         /*$dates = array(
             "21/06", "22/06", "23/06", "24/06", "25/06", "26/06", "27/06", "28/06", "29/06","30/06","31/06", "01/07", "02/07","03/07"
@@ -51,6 +51,7 @@ class DefaultController extends Controller
         $ob = new Highchart();
         $ob->chart->renderTo('linechart');  // The #id of the div where to render the chart
         $ob->chart->backgroundColor('transparent');
+        //$ob->chart->type('bar');
         $ob->title->text('Indicators'); //Chart Title
         $ob->xAxis->title(array('text'  => "Date")); //Horizontal axis title
         $ob->yAxis->title(array('text'  => "indicator")); //Vertical axis title

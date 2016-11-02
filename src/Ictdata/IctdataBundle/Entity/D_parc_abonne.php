@@ -55,7 +55,18 @@ class D_parc_abonne
      * @ORM\Column(name="p_fixe_residentiel", type="float")
      */
     private $pFixeResidentiel;
-
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="p_fixe_professionnel", type="float")
+     */
+    private $pFixeProfessionnel;
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="p_fixe_global", type="float")
+     */
+    private $pFixeGlobal;
     /**
      * @var float
      *
@@ -235,6 +246,7 @@ class D_parc_abonne
      * @param float $pFixeResidentiel
      * @return D_parc_abonne
      */
+
     public function setPFixeResidentiel($pFixeResidentiel)
     {
         $this->pFixeResidentiel = $pFixeResidentiel;
@@ -251,7 +263,52 @@ class D_parc_abonne
     {
         return $this->pFixeResidentiel;
     }
+    /**
+     * Set pFixeProfessionnel
+     *
+     * @param float $pFixeProfessionnel
+     * @return D_parc_abonne
+     */
 
+    public function setPFixeProfessionnel($pFixeProfessionnel)
+    {
+        $this->pFixeProfessionnel = $pFixeProfessionnel;
+
+        return $this;
+    }
+
+    /**
+     * Get pFixeProfessionnel
+     *
+     * @return float
+     */
+    public function getPFixeProfessionnel()
+    {
+        return $this->pFixeProfessionnel;
+    }
+    /**
+     * Set pFixeGlobal
+     *
+     * @param float $pFixeGlobal
+     * @return D_parc_abonne
+     */
+
+    public function setPFixeGlobal($pFixeGlobal)
+    {
+        $this->pFixeGlobal = $pFixeGlobal;
+
+        return $this;
+    }
+
+    /**
+     * Get pFixeGlobal
+     *
+     * @return float
+     */
+    public function getPFixeGlobal()
+    {
+        return $this->pFixeGlobal;
+    }
     /**
      * Set pPubliphoneLignes
      *

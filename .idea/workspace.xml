@@ -2,22 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d933a207-91e0-4128-8276-40a3d1e79d3f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/9be92c8199836b2a2fd851410c7cd9ca3159b62f$eMenagesequOrdinateur.cache.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Ictdatachart/chartBundle/Resources/views/Default/chartecomputer.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Ictdatachart/chartBundle/Resources/views/Default/charteinternet.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/852a45195ea461da899e973b8d45a7b485fbc80e$pFixeGlobal.cache.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/852a45195ea461da899e973b8d45a7b485fbc80e$pFixeProfessionnel.cache.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Ictdata/IctdataBundle/Resources/views/Default/form_pabonn.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerUrlGenerator.php.meta" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerUrlGenerator.php.meta" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/template.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/template.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.xml" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerUrlGenerator.php" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerUrlGenerator.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerUrlMatcher.php" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerUrlMatcher.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" afterPath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/ba/ba751f5419dd0e3620be5bb03a2ced684ee62d6e7797fedb584404fe37b9ec1e.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/ba/ba751f5419dd0e3620be5bb03a2ced684ee62d6e7797fedb584404fe37b9ec1e.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/1a/1a1e41d872550fcf75e811f704aad1cc3f842314168e84072defaa60c2e7f1a0.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/1a/1a1e41d872550fcf75e811f704aad1cc3f842314168e84072defaa60c2e7f1a0.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/logs/dev.log" afterPath="$PROJECT_DIR$/app/logs/dev.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Ictdata/IctdataBundle/Controller/IctdataController.php" afterPath="$PROJECT_DIR$/src/Ictdata/IctdataBundle/Controller/IctdataController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Ictdata/IctdataBundle/Entity/E_enquete.php" afterPath="$PROJECT_DIR$/src/Ictdata/IctdataBundle/Entity/E_enquete.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Ictdatachart/chartBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/Ictdatachart/chartBundle/Resources/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Ictdata/IctdataBundle/Entity/D_parc_abonne.php" afterPath="$PROJECT_DIR$/src/Ictdata/IctdataBundle/Entity/D_parc_abonne.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Ictdata/IctdataBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/Ictdata/IctdataBundle/Resources/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Ictdata/IctdataBundle/Resources/views/Default/adminspace.html.twig" afterPath="$PROJECT_DIR$/src/Ictdata/IctdataBundle/Resources/views/Default/adminspace.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Ictdatachart/chartBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/Ictdatachart/chartBundle/Controller/DefaultController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Ictdatachart/chartBundle/Controller/chartemobileController.php" afterPath="$PROJECT_DIR$/src/Ictdatachart/chartBundle/Controller/chartemobileController.php" />
     </list>
     <ignored path="ICT_DATA_MOROCCO.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,45 +51,92 @@
       <file leaf-file-name="ChartemobileController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Ictdatachart/chartBundle/Controller/ChartemobileController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="233" column="64" selection-start-line="233" selection-start-column="64" selection-end-line="233" selection-end-column="64" />
+            <state relative-caret-position="3281">
+              <caret line="197" column="78" selection-start-line="197" selection-start-column="78" selection-end-line="197" selection-end-column="78" />
               <folding>
                 <element signature="e#55#112#0#PHP" expanded="true" />
-                <marker date="1477970731215" expanded="true" signature="458:651" placeholder="SELECT e.eDa... " />
-                <marker date="1477970731215" expanded="true" signature="3599:3678" placeholder="SELECT e.eDa... " />
-                <marker date="1477970731215" expanded="true" signature="5043:5253" placeholder="SELECT e.eDa... " />
-                <marker date="1477970731215" expanded="true" signature="8128:8373" placeholder="SELECT e.eDa... " />
+                <marker date="1478013883227" expanded="true" signature="458:651" placeholder="SELECT e.eDa... " />
+                <marker date="1478013883227" expanded="true" signature="3599:3678" placeholder="SELECT e.eDa... " />
+                <marker date="1478013883227" expanded="true" signature="5043:5253" placeholder="SELECT e.eDa... " />
+                <marker date="1478013883227" expanded="true" signature="8128:8373" placeholder="SELECT e.eDa... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="charteinternet.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Ictdatachart/chartBundle/Resources/views/Default/charteinternet.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Ictdatachart/chartBundle/Resources/config/routing.yml">
+        <entry file="file://$PROJECT_DIR$/src/Ictdata/IctdataBundle/Resources/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="15" />
+            <state relative-caret-position="340">
+              <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="template.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/template.html.twig">
+      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Ictdatachart/chartBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-157">
-              <caret line="593" column="68" selection-start-line="593" selection-start-column="68" selection-end-line="593" selection-end-column="68" />
+            <state relative-caret-position="221">
+              <caret line="70" column="55" selection-start-line="70" selection-start-column="55" selection-end-line="70" selection-end-column="55" />
+              <folding>
+                <element signature="e#55#112#0#PHP" expanded="true" />
+                <marker date="1478050671918" expanded="true" signature="445:522" placeholder="SELECT e.eMe... " />
+                <marker date="1478050671918" expanded="true" signature="563:739" placeholder="SELECT e.eMe... IctdataBundle" />
+                <marker date="1478050671918" expanded="true" signature="6263:6277" placeholder="..." />
+                <marker date="1478050671918" expanded="true" signature="6355:6374" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="form_pabonn.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Ictdata/IctdataBundle/Resources/views/Default/form_pabonn.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="D_parc_abonne.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Ictdata/IctdataBundle/Entity/D_parc_abonne.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4488">
+              <caret line="298" column="0" selection-start-line="298" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
+              <folding>
+                <element signature="e#4462#4575#0#PHP" expanded="false" />
+                <element signature="e#4581#4723#0#PHP" expanded="false" />
+                <element signature="e#4729#4797#0#PHP" expanded="false" />
+                <element signature="e#4802#4891#0#PHP" expanded="false" />
+                <element signature="e#4896#5013#0#PHP" expanded="false" />
+                <element signature="e#5019#5169#0#PHP" expanded="false" />
+                <element signature="e#5175#5244#0#PHP" expanded="false" />
+                <element signature="e#5249#5342#0#PHP" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adminspace.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Ictdata/IctdataBundle/Resources/views/Default/adminspace.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IctdataController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Ictdata/IctdataBundle/Controller/IctdataController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1632">
+              <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+              <folding>
+                <element signature="e#52#109#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -96,7 +145,6 @@
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="s doctrine:schema:update --force" />
       <command text="s doctrine:database:create" />
       <command text="s doctrine:schema:create" />
       <command text="s doctrine:schema:update --force" />
@@ -121,13 +169,11 @@
       <command text="s generate:bundle" />
       <command text="s doctrine:database:create" />
       <command text="s doctrine:schema:update --force" />
+      <command text="s doctrine:schema:update  --force" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -158,28 +204,30 @@
         <option value="$PROJECT_DIR$/src/Ictdata/IctdataBundle/Entity/D_part_marche.php" />
         <option value="$PROJECT_DIR$/src/Ictdata/IctdataBundle/Entity/D_infrastruct_autre.php" />
         <option value="$PROJECT_DIR$/src/Ictdata/IctdataBundle/Entity/D_trafic.php" />
-        <option value="$PROJECT_DIR$/src/Ictdata/IctdataBundle/Resources/views/Default/adminspace.html.twig" />
         <option value="$PROJECT_DIR$/src/Ictdata/IctdataBundle/Resources/views/Default/showdata.html.twig" />
         <option value="$PROJECT_DIR$/src/Ictdata/IctdataBundle/Entity/E_enqueteRepository.php" />
         <option value="$PROJECT_DIR$/src/Ictdata/IctdataBundle/Resources/views/Default/recherche.html.twig" />
-        <option value="$PROJECT_DIR$/src/Ictdata/IctdataBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/src/Ictdatachart/chartBundle/Resources/views/chart.html.twig" />
         <option value="$PROJECT_DIR$/src/Utilisateurs/UtilisateursBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/Ictdatachart/chartBundle/Controller/chartemobileController.php" />
         <option value="$PROJECT_DIR$/src/Ictdatachart/chartBundle/Resources/views/chartemobile.html.twig" />
-        <option value="$PROJECT_DIR$/src/Ictdatachart/chartBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/Ictdatachart/chartBundle/Resources/views/Default/chart.html.twig" />
         <option value="$PROJECT_DIR$/src/Ictdatachart/chartBundle/Resources/views/Default/chartemobile.html.twig" />
         <option value="$PROJECT_DIR$/src/Ictdatachart/chartBundle/Resources/views/Default/chartefixe.html.twig" />
         <option value="$PROJECT_DIR$/src/Ictdatachart/chartBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/app/Resources/views/template.html.twig" />
         <option value="$PROJECT_DIR$/src/Ictdata/IctdataBundle/Entity/E_enquete.php" />
-        <option value="$PROJECT_DIR$/src/Ictdata/IctdataBundle/Controller/IctdataController.php" />
         <option value="$PROJECT_DIR$/src/Ictdatachart/chartBundle/Resources/views/Default/charteinternet.html.twig" />
         <option value="$PROJECT_DIR$/src/Ictdatachart/chartBundle/Resources/views/Default/chartecomputer.html.twig" />
         <option value="$PROJECT_DIR$/src/Ictdatachart/chartBundle/Controller/ChartemobileController.php" />
+        <option value="$PROJECT_DIR$/src/Ictdata/IctdataBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/Ictdata/IctdataBundle/Resources/views/Default/adminspace.html.twig" />
+        <option value="$PROJECT_DIR$/src/Ictdata/IctdataBundle/Entity/D_parc_abonne.php" />
+        <option value="$PROJECT_DIR$/src/Ictdata/IctdataBundle/Controller/IctdataController.php" />
+        <option value="$PROJECT_DIR$/src/Ictdata/IctdataBundle/Resources/views/Default/form_pabonn.html.twig" />
+        <option value="$PROJECT_DIR$/src/Ictdatachart/chartBundle/Controller/DefaultController.php" />
       </list>
     </option>
   </component>
@@ -224,7 +272,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -576,62 +623,6 @@
               <option name="myItemId" value="Ictdata" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IctdataBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ICT_DATA_MOROCCO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ICT_DATA_MOROCCO" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Ictdata" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IctdataBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Entity" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ICT_DATA_MOROCCO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ICT_DATA_MOROCCO" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Ictdata" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IctdataBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -689,12 +680,13 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="SearchEverywhereHistoryKey" value="Expr&#9;null&#9;null&#10;command&#9;ACTION&#9;com.jetbrains.php.framework.FrameworkRunConsoleAction&#10;all.&#9;FILE&#9;file://C:/xampp/htdocs/ICT_DATA_MOROCCO/vendor/friendsofsymfony/user-bundle/Resources/config/routing/all.xml&#10;util&#9;FILE&#9;file://C:/xampp/htdocs/ICT_DATA_MOROCCO/src/Utilisateurs/UtilisateursBundle/UtilisateursBundle.php&#10;Util&#9;null&#9;null&#10;MappingExcep&#9;FILE&#9;file://C:/xampp/htdocs/ICT_DATA_MOROCCO/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="154" />
@@ -715,17 +707,17 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\ICT_DATA_MOROCCO\src\Ictdata\IctdataBundle\Resources\views\Default" />
+      <recent name="C:\xampp\htdocs\ICT_DATA_MOROCCO\src\Ictdatachart\chartBundle\Resources\views\Default" />
+      <recent name="C:\xampp\htdocs\ICT_DATA_MOROCCO\src\Ictdatachart\chartBundle\Resources\views" />
+      <recent name="C:\xampp\htdocs\ICT_DATA_MOROCCO\src\Ictdatachart\chartBundle\Controller" />
+      <recent name="C:\xampp\htdocs\ICT_DATA_MOROCCO\web\css" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\ICT_DATA_MOROCCO\src\Ictdatachart\chartBundle\Resources\views\Default" />
       <recent name="C:\xampp\htdocs\ICT_DATA_MOROCCO\app\Resources" />
       <recent name="C:\xampp\htdocs\ICT_DATA_MOROCCO\app\Resources\views" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\ICT_DATA_MOROCCO\src\Ictdatachart\chartBundle\Resources\views\Default" />
-      <recent name="C:\xampp\htdocs\ICT_DATA_MOROCCO\src\Ictdatachart\chartBundle\Resources\views" />
-      <recent name="C:\xampp\htdocs\ICT_DATA_MOROCCO\src\Ictdatachart\chartBundle\Controller" />
-      <recent name="C:\xampp\htdocs\ICT_DATA_MOROCCO\src\Ictdata\IctdataBundle\Resources\views\Default" />
-      <recent name="C:\xampp\htdocs\ICT_DATA_MOROCCO\web\css" />
     </key>
   </component>
   <component name="RunManager">
@@ -788,22 +780,23 @@
       <workItem from="1477839125772" duration="1448000" />
       <workItem from="1477848758233" duration="19154000" />
       <workItem from="1477931092458" duration="11804000" />
-      <workItem from="1477960769935" duration="7538000" />
+      <workItem from="1477960769935" duration="7953000" />
+      <workItem from="1478012574622" duration="14307000" />
+      <workItem from="1478111764420" duration="1625000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122664000" />
+    <option name="totallyTimeSpent" value="139011000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1370" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2519084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20763358" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.01832061" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24713585" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29459903" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24961832" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29787233" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -813,6 +806,7 @@
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24222586" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -858,20 +852,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="54" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/vendor/bootstrap/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="611" column="0" selection-start-line="611" selection-start-column="0" selection-end-line="611" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/css/freelancer.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
@@ -965,13 +945,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ictdata/IctdataBundle/Resources/views/Default/adminspace.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Ictdata/IctdataBundle/Resources/views/Default/recherche.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1062,13 +1035,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ictdata/IctdataBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="60" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/img/portfolio/m2m.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1083,7 +1049,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1091,7 +1056,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="82" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1107,7 +1071,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1115,29 +1078,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ictdata/IctdataBundle/Controller/IctdataController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ictdatachart/chartBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3774">
-          <caret line="222" column="18" selection-start-line="222" selection-start-column="18" selection-end-line="222" selection-end-column="18" />
-          <folding>
-            <element signature="e#55#112#0#PHP" expanded="true" />
-            <marker date="1477883793692" expanded="true" signature="445:522" placeholder="SELECT e.eMe... " />
-            <marker date="1477883793692" expanded="true" signature="563:739" placeholder="SELECT e.eMe... IctdataBundle" />
-            <marker date="1477883793692" expanded="true" signature="6225:6239" placeholder="..." />
-            <marker date="1477883793692" expanded="true" signature="6317:6336" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1145,7 +1085,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1153,7 +1092,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/template.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="592" column="66" selection-start-line="592" selection-start-column="66" selection-end-line="592" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ictdatachart/chartBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -1161,37 +1113,85 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ictdata/IctdataBundle/Resources/views/Default/adminspace.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ictdata/IctdataBundle/Entity/D_parc_abonne.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4488">
+          <caret line="298" column="0" selection-start-line="298" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
+          <folding>
+            <element signature="e#4462#4575#0#PHP" expanded="false" />
+            <element signature="e#4581#4723#0#PHP" expanded="false" />
+            <element signature="e#4729#4797#0#PHP" expanded="false" />
+            <element signature="e#4802#4891#0#PHP" expanded="false" />
+            <element signature="e#4896#5013#0#PHP" expanded="false" />
+            <element signature="e#5019#5169#0#PHP" expanded="false" />
+            <element signature="e#5175#5244#0#PHP" expanded="false" />
+            <element signature="e#5249#5342#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ictdata/IctdataBundle/Resources/views/Default/form_pabonn.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Ictdatachart/chartBundle/Controller/ChartemobileController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="233" column="64" selection-start-line="233" selection-start-column="64" selection-end-line="233" selection-end-column="64" />
+        <state relative-caret-position="3281">
+          <caret line="197" column="78" selection-start-line="197" selection-start-column="78" selection-end-line="197" selection-end-column="78" />
           <folding>
             <element signature="e#55#112#0#PHP" expanded="true" />
-            <marker date="1477970731215" expanded="true" signature="458:651" placeholder="SELECT e.eDa... " />
-            <marker date="1477970731215" expanded="true" signature="3599:3678" placeholder="SELECT e.eDa... " />
-            <marker date="1477970731215" expanded="true" signature="5043:5253" placeholder="SELECT e.eDa... " />
-            <marker date="1477970731215" expanded="true" signature="8128:8373" placeholder="SELECT e.eDa... " />
+            <marker date="1478013883227" expanded="true" signature="458:651" placeholder="SELECT e.eDa... " />
+            <marker date="1478013883227" expanded="true" signature="3599:3678" placeholder="SELECT e.eDa... " />
+            <marker date="1478013883227" expanded="true" signature="5043:5253" placeholder="SELECT e.eDa... " />
+            <marker date="1478013883227" expanded="true" signature="8128:8373" placeholder="SELECT e.eDa... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ictdatachart/chartBundle/Resources/config/routing.yml">
+    <entry file="file://$PROJECT_DIR$/src/Ictdata/IctdataBundle/Controller/IctdataController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="15" />
+        <state relative-caret-position="1632">
+          <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+          <folding>
+            <element signature="e#52#109#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ictdata/IctdataBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/template.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Ictdatachart/chartBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-157">
-          <caret line="593" column="68" selection-start-line="593" selection-start-column="68" selection-end-line="593" selection-end-column="68" />
-          <folding />
+        <state relative-caret-position="221">
+          <caret line="70" column="55" selection-start-line="70" selection-start-column="55" selection-end-line="70" selection-end-column="55" />
+          <folding>
+            <element signature="e#55#112#0#PHP" expanded="true" />
+            <marker date="1478050671918" expanded="true" signature="445:522" placeholder="SELECT e.eMe... " />
+            <marker date="1478050671918" expanded="true" signature="563:739" placeholder="SELECT e.eMe... IctdataBundle" />
+            <marker date="1478050671918" expanded="true" signature="6263:6277" placeholder="..." />
+            <marker date="1478050671918" expanded="true" signature="6355:6374" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
