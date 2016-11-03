@@ -9,6 +9,8 @@ use Symfony\Component\HttpFoundation\Request;
 
 class IctdataController extends Controller
 {
+
+
     public function indexAction()
     {
 
@@ -83,6 +85,27 @@ class IctdataController extends Controller
             ->add("pInternetGlobaleAutre", "number")
             ->add("pInternetBasdebit", "number")
             ->add("pInternet", "number")
+            ->add("pInternetClassique", "number")
+            ->add("pInternetForfait", "number")
+            ->add("pInternetAdsl", "number")
+            ->add("pInternetAdsldebit128k", "number")
+            ->add("pInternetAdsldebit153k", "number")
+            ->add("pInternetAdsldebit256k", "number")
+            ->add("pInternetAdsldebit512k", "number")
+            ->add("pInternetAdsldebit1024k", "number")
+            ->add("pInternetAdsldebit2M", "number")
+            ->add("pInternetAdsldebit4M", "number")
+            ->add("pInternetAdsldebit8M", "number")
+            ->add("pInternetAdsldebit12M", "number")
+            ->add("pInternetAdsldebit20M", "number")
+            ->add("pllInternet", "number")
+            ->add("pInternet3G", "number")
+            ->add("pInternet3GData", "number")
+            ->add("pInternet3GDataVoi", "number")
+            ->add("pNomDomainMa", "number")
+            ->add("pRepartMa", "number")
+            ->add("pRepartAutre", "number")
+            ->add("pNewEnregistTrimestre", "number")
             ->add("pNomDomainMa", "number")
             ->add("pRepartMa", "number")
             ->add("pRepartAutre", "number")

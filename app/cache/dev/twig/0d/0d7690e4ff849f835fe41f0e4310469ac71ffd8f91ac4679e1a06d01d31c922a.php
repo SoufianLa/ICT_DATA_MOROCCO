@@ -22,20 +22,20 @@ class __TwigTemplate_33e6c63776aaea1d385d0780b5d90214f3846a7c2a4cd17314eb6c5950f
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_d228a30782045e5890f2e4dbf63ceed1c809e0eacd94768bc904368e325d3eda = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_d228a30782045e5890f2e4dbf63ceed1c809e0eacd94768bc904368e325d3eda->enter($__internal_d228a30782045e5890f2e4dbf63ceed1c809e0eacd94768bc904368e325d3eda_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "chartBundle:Default:chartemobile.html.twig"));
+        $__internal_6d73e7fa4283a320af67d89401cfd7b18e33ee7847f585e824c3196724ad886e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_6d73e7fa4283a320af67d89401cfd7b18e33ee7847f585e824c3196724ad886e->enter($__internal_6d73e7fa4283a320af67d89401cfd7b18e33ee7847f585e824c3196724ad886e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "chartBundle:Default:chartemobile.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_d228a30782045e5890f2e4dbf63ceed1c809e0eacd94768bc904368e325d3eda->leave($__internal_d228a30782045e5890f2e4dbf63ceed1c809e0eacd94768bc904368e325d3eda_prof);
+        $__internal_6d73e7fa4283a320af67d89401cfd7b18e33ee7847f585e824c3196724ad886e->leave($__internal_6d73e7fa4283a320af67d89401cfd7b18e33ee7847f585e824c3196724ad886e_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_d30aed52d8f58c8e11e7ae06510f0f0aca1241e3a97b880e6fc6a1937075856a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_d30aed52d8f58c8e11e7ae06510f0f0aca1241e3a97b880e6fc6a1937075856a->enter($__internal_d30aed52d8f58c8e11e7ae06510f0f0aca1241e3a97b880e6fc6a1937075856a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "chartBundle:Default:chartemobile.html.twig"));
+        $__internal_c62d7e974ffb26e745f51b25886fe9d2a0d086542a6642de10fc173b5bec17fa = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_c62d7e974ffb26e745f51b25886fe9d2a0d086542a6642de10fc173b5bec17fa->enter($__internal_c62d7e974ffb26e745f51b25886fe9d2a0d086542a6642de10fc173b5bec17fa_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "chartBundle:Default:chartemobile.html.twig"));
 
         // line 4
         echo "<br /><br /><br /><br />
@@ -44,15 +44,15 @@ class __TwigTemplate_33e6c63776aaea1d385d0780b5d90214f3846a7c2a4cd17314eb6c5950f
 <div id=\"linechart_column\" style=\"min-width: 400px; height: 510px; margin: 0 auto\"></div>
 ";
         
-        $__internal_d30aed52d8f58c8e11e7ae06510f0f0aca1241e3a97b880e6fc6a1937075856a->leave($__internal_d30aed52d8f58c8e11e7ae06510f0f0aca1241e3a97b880e6fc6a1937075856a_prof);
+        $__internal_c62d7e974ffb26e745f51b25886fe9d2a0d086542a6642de10fc173b5bec17fa->leave($__internal_c62d7e974ffb26e745f51b25886fe9d2a0d086542a6642de10fc173b5bec17fa_prof);
 
     }
 
     // line 9
     public function block_javascripts($context, array $blocks = array())
     {
-        $__internal_561d5ed7f516938f3e5c3f29bb191e5d9848459339801d2ee56406f35a1f2230 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_561d5ed7f516938f3e5c3f29bb191e5d9848459339801d2ee56406f35a1f2230->enter($__internal_561d5ed7f516938f3e5c3f29bb191e5d9848459339801d2ee56406f35a1f2230_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "chartBundle:Default:chartemobile.html.twig"));
+        $__internal_c63fdf2ed0cac0e99b5d15da65d931852f8ac3de6a686f9f3a2f9b279680c01e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_c63fdf2ed0cac0e99b5d15da65d931852f8ac3de6a686f9f3a2f9b279680c01e->enter($__internal_c63fdf2ed0cac0e99b5d15da65d931852f8ac3de6a686f9f3a2f9b279680c01e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "chartBundle:Default:chartemobile.html.twig"));
 
         // line 10
         echo "
@@ -72,7 +72,7 @@ class __TwigTemplate_33e6c63776aaea1d385d0780b5d90214f3846a7c2a4cd17314eb6c5950f
 
 ";
         
-        $__internal_561d5ed7f516938f3e5c3f29bb191e5d9848459339801d2ee56406f35a1f2230->leave($__internal_561d5ed7f516938f3e5c3f29bb191e5d9848459339801d2ee56406f35a1f2230_prof);
+        $__internal_c63fdf2ed0cac0e99b5d15da65d931852f8ac3de6a686f9f3a2f9b279680c01e->leave($__internal_c63fdf2ed0cac0e99b5d15da65d931852f8ac3de6a686f9f3a2f9b279680c01e_prof);
 
     }
 

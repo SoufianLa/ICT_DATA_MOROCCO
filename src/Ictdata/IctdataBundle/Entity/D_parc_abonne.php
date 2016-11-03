@@ -117,9 +117,9 @@ class D_parc_abonne
     /**
      * @var float
      *
-     * @ORM\Column(name="p_internet_forfait", type="float")
+     * @ORM\Column(name="p_internet_forfait", type="float", nullable=true)
      */
-    private $pInternetForfait;
+    private $pInternetForfait = null;
     /**
      * @var float
      *
@@ -195,21 +195,21 @@ class D_parc_abonne
     /**
      * @var float
      *
-     * @ORM\Column(name="p_Internet3G", type="float")
+     * @ORM\Column(name="p_Internet3G", type="float", nullable=true)
      */
-    private $pInternet3G;
+    private $pInternet3G = null;
     /**
      * @var float
      *
-     * @ORM\Column(name="p_Internet3G_Data", type="float")
+     * @ORM\Column(name="p_Internet3G_Data", type="float", nullable=true)
      */
-    private $pInternet3GData;
+    private $pInternet3GData = null;
     /**
      * @var float
      *
-     * @ORM\Column(name="p_Internet3G_Data_Voi", type="float")
+     * @ORM\Column(name="p_Internet3G_Data_Voi", type="float", nullable=true)
      */
-    private $pInternet3GDataVoi;
+    private $pInternet3GDataVoi = null;
 
     /**
      * @var float
@@ -579,7 +579,7 @@ class D_parc_abonne
      */
     public function setPInternetForfait($pInternetForfait)
     {
-        $this->pInternet = $pInternetForfait;
+        $this->pInternetForfait = $pInternetForfait;
 
         return $this;
     }
@@ -838,26 +838,27 @@ class D_parc_abonne
         return $this->pInternetAdsldebit20M;
     }
     /**
-     * Set pllinternet
+     * Set pllInternet;
+
      *
-     * @param float $pllinternet
+     * @param float $pllInternet
      * @return D_parc_abonne
      */
-    public function setPllinternet($pllinternet)
+    public function setPllInternet($pllInternet)
     {
-        $this->pllinternet = $pllinternet;
+        $this->pllInternet = $pllInternet;
 
         return $this;
     }
 
     /**
-     * Get pllinternet
+     * Get pllInternet
      *
      * @return float
      */
-    public function getPllinternet()
+    public function getPllInternet()
     {
-        return $this->pllinternet;
+        return $this->pllInternet;
     }
     /**
      * Set pInternet3G
@@ -911,7 +912,7 @@ class D_parc_abonne
      */
     public function setPInternet3GDataVoi($pInternet3GDataVoi)
     {
-        $this->pInternet3GDataVoix = $pInternet3GDataVoi;
+        $this->pInternet3GDataVoi = $pInternet3GDataVoi;
 
         return $this;
     }
