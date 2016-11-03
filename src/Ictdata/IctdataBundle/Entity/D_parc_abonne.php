@@ -108,6 +108,108 @@ class D_parc_abonne
      * @ORM\Column(name="p_internet", type="float")
      */
     private $pInternet;
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="p_internet_classique", type="float")
+     */
+    private $pInternetClassique;
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="p_internet_forfait", type="float")
+     */
+    private $pInternetForfait;
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="p_internet_adsl", type="float")
+     */
+    private $pInternetAdsl;
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="p_internet_adsl_debit128k", type="float")
+     */
+    private $pInternetAdsldebit128k;
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="p_internet_adsl_debit153k", type="float")
+     */
+    private $pInternetAdsldebit153k;
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="p_internet_adsl_debit256k", type="float")
+     */
+    private $pInternetAdsldebit256k;
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="p_internet_adsl_debit512k", type="float")
+     */
+    private $pInternetAdsldebit512k;
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="p_internet_adsl_debit1024k", type="float")
+     */
+    private $pInternetAdsldebit1024k;
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="p_internet_adsl_debit2M", type="float")
+     */
+    private $pInternetAdsldebit2M;
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="p_internet_adsl_debit4M", type="float")
+     */
+    private $pInternetAdsldebit4M;
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="p_internet_adsl_debit8M", type="float")
+     */
+    private $pInternetAdsldebit8M;
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="p_internet_adsl_debit12M", type="float")
+     */
+    private $pInternetAdsldebit12M;
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="p_internet_adsl_debit20M", type="float")
+     */
+    private $pInternetAdsldebit20M;
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="pll_Internet", type="float")
+     */
+    private $pllInternet;
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="p_Internet3G", type="float")
+     */
+    private $pInternet3G;
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="p_Internet3G_Data", type="float")
+     */
+    private $pInternet3GData;
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="p_Internet3G_Data_Voi", type="float")
+     */
+    private $pInternet3GDataVoi;
 
     /**
      * @var float
@@ -276,7 +378,6 @@ class D_parc_abonne
 
         return $this;
     }
-
     /**
      * Get pFixeProfessionnel
      *
@@ -446,6 +547,386 @@ class D_parc_abonne
     {
         return $this->pInternet;
     }
+    // Labihi lMengouss !!
+    /**
+     * Set pInternetClassique
+     *
+     * @param float $pInternetClassique
+     * @return D_parc_abonne
+     */
+    public function setPInternetClassique($pInternetClassique)
+    {
+        $this->pInternetClassique = $pInternetClassique;
+
+        return $this;
+    }
+
+    /**
+     * Get pInternet
+     *
+     * @return float
+     */
+    public function getPInternetClassique()
+    {
+        return $this->pInternetClassique;
+    }
+
+    /**
+     * Set pInternetForfait
+     *
+     * @param float $pInternetForfait
+     * @return D_parc_abonne
+     */
+    public function setPInternetForfait($pInternetForfait)
+    {
+        $this->pInternet = $pInternetForfait;
+
+        return $this;
+    }
+
+    /**
+     * Get pInternetForfait
+     *
+     * @return float
+     */
+    public function getPInternetForfait()
+    {
+        return $this->pInternetForfait;
+    }
+    /**
+     * Set pInternetAdsl
+     *
+     * @param float $pInternetAdsl
+     * @return D_parc_abonne
+     */
+    public function setPInternetAdsl($pInternetAdsl)
+    {
+        $this->pInternetAdsl = $pInternetAdsl;
+
+        return $this;
+    }
+
+    /**
+     * Get pInternetAdsldebit128k
+     *
+     * @return float
+     */
+    public function getPInternetAdsl()
+    {
+        return $this->pInternetAdsl;
+    }
+    /**
+     * Set pInternetAdsldebit128k
+     *
+     * @param float $pInternetAdsldebit128k
+     * @return D_parc_abonne
+     */
+    public function setPInternetAdsldebit128k($pInternetAdsldebit128k)
+    {
+        $this->pInternetAdsldebit128k = $pInternetAdsldebit128k;
+
+        return $this;
+    }
+
+    /**
+     * Get pInternetAdsldebit128k
+     *
+     * @return float
+     */
+    public function getPInternetAdsldebit128k()
+    {
+        return $this->pInternetAdsldebit128k;
+    }
+
+    /**
+     * Set pInternetAdsldebit153k
+     *
+     * @param float $pInternetAdsldebit153k
+     * @return D_parc_abonne
+     */
+    public function setPInternetAdsldebit153k($pInternetAdsldebit153k)
+    {
+        $this->pInternetAdsldebit153k = $pInternetAdsldebit153k;
+
+        return $this;
+    }
+
+    /**
+     * Get pInternetAdsldebit153k
+     *
+     * @return float
+     */
+    public function getPInternetAdsldebit153k()
+    {
+        return $this->pInternetAdsldebit153k;
+    }
+
+    /**
+     * Set pInternetAdsldebit256k
+     *
+     * @param float $pInternetAdsldebit256k
+     * @return D_parc_abonne
+     */
+    public function setPInternetAdsldebit256k($pInternetAdsldebit256k)
+    {
+        $this->pInternetAdsldebit256k = $pInternetAdsldebit256k;
+
+        return $this;
+    }
+
+    /**
+     * Get pInternetAdsldebit256k
+     *
+     * @return float
+     */
+    public function getPInternetAdsldebit256k()
+    {
+        return $this->pInternetAdsldebit256k;
+    }
+    /**
+     * Set pInternetAdsldebit512k
+     *
+     * @param float $pInternetAdsldebit512k
+     * @return D_parc_abonne
+     */
+    public function setPInternetAdsldebit512k($pInternetAdsldebit512k)
+    {
+        $this->pInternetAdsldebit512k = $pInternetAdsldebit512k;
+
+        return $this;
+    }
+
+    /**
+     * Get pInternetAdsldebit512k
+     *
+     * @return float
+     */
+    public function getPInternetAdsldebit512k()
+    {
+        return $this->pInternetAdsldebit512k;
+    }
+    /**
+     * Set pInternetAdsldebit1024k
+     *
+     * @param float $pInternetAdsldebit1024k
+     * @return D_parc_abonne
+     */
+    public function setPInternetAdsldebit1024k($pInternetAdsldebit1024k)
+    {
+        $this->pInternetAdsldebit1024k = $pInternetAdsldebit1024k;
+
+        return $this;
+    }
+
+    /**
+     * Get pInternetAdsldebit1024k
+     *
+     * @return float
+     */
+    public function getPInternetAdsldebit1024k()
+    {
+        return $this->pInternetAdsldebit1024k;
+    }
+    /**
+     * Set pInternetAdsldebit2M
+     *
+     * @param float $pInternetAdsldebit2M
+     * @return D_parc_abonne
+     */
+    public function setPInternetAdsldebit2M($pInternetAdsldebit2M)
+    {
+        $this->pInternetAdsldebit2M = $pInternetAdsldebit2M;
+
+        return $this;
+    }
+
+    /**
+     * Get pInternetAdsldebit2M
+     *
+     * @return float
+     */
+    public function getPInternetAdsldebit2M()
+    {
+        return $this->pInternetAdsldebit2M;
+    }
+    /**
+     * Set pInternetAdsldebit4M
+     *
+     * @param float $pInternetAdsldebit4M
+     * @return D_parc_abonne
+     */
+    public function setPInternetAdsldebit4M($pInternetAdsldebit4M)
+    {
+        $this->pInternetAdsldebit4M = $pInternetAdsldebit4M;
+
+        return $this;
+    }
+
+    /**
+     * Get pInternetAdsldebit4M
+     *
+     * @return float
+     */
+    public function getPInternetAdsldebit4M()
+    {
+        return $this->pInternetAdsldebit4M;
+    }
+    /**
+     * Set pInternetAdsldebit8M
+     *
+     * @param float $pInternetAdsldebit8M
+     * @return D_parc_abonne
+     */
+    public function setPInternetAdsldebit8M($pInternetAdsldebit8M)
+    {
+        $this->pInternetAdsldebit8M = $pInternetAdsldebit8M;
+
+        return $this;
+    }
+
+    /**
+     * Get pInternetAdsldebit8M
+     *
+     * @return float
+     */
+    public function getPInternetAdsldebit8M()
+    {
+        return $this->pInternetAdsldebit8M;
+    }
+    /**
+     * Set pInternetAdsldebit12M
+     *
+     * @param float $pInternetAdsldebit12M
+     * @return D_parc_abonne
+     */
+    public function setPInternetAdsldebit12M($pInternetAdsldebit12M)
+    {
+        $this->pInternetAdsldebit12M = $pInternetAdsldebit12M;
+
+        return $this;
+    }
+
+    /**
+     * Get pInternetAdsldebit12M
+     *
+     * @return float
+     */
+    public function getPInternetAdsldebit12M()
+    {
+        return $this->pInternetAdsldebit12M;
+    }
+    /**
+     * Set pInternetAdsldebit20M
+     *
+     * @param float $pInternetAdsldebit20M
+     * @return D_parc_abonne
+     */
+    public function setPInternetAdsldebit20M($pInternetAdsldebit20M)
+    {
+        $this->pInternetAdsldebit20M = $pInternetAdsldebit20M;
+
+        return $this;
+    }
+
+    /**
+     * Get pInternetAdsldebit20M
+     *
+     * @return float
+     */
+    public function getPInternetAdsldebit20M()
+    {
+        return $this->pInternetAdsldebit20M;
+    }
+    /**
+     * Set pllinternet
+     *
+     * @param float $pllinternet
+     * @return D_parc_abonne
+     */
+    public function setPllinternet($pllinternet)
+    {
+        $this->pllinternet = $pllinternet;
+
+        return $this;
+    }
+
+    /**
+     * Get pllinternet
+     *
+     * @return float
+     */
+    public function getPllinternet()
+    {
+        return $this->pllinternet;
+    }
+    /**
+     * Set pInternet3G
+     *
+     * @param float $pInternet3G
+     * @return D_parc_abonne
+     */
+    public function setPInternet3G($pInternet3G)
+    {
+        $this->pInternet3G = $pInternet3G;
+
+        return $this;
+    }
+
+    /**
+     * Get pInternet3G
+     *
+     * @return float
+     */
+    public function getPInternet3G()
+    {
+        return $this->pInternet3G;
+    }
+    /**
+     * Set pInternet3GData
+     *
+     * @param float $pInternet3GData
+     * @return D_parc_abonne
+     */
+    public function setPInternet3GData($pInternet3GData)
+    {
+        $this->pInternet3GData = $pInternet3GData;
+
+        return $this;
+    }
+
+    /**
+     * Get pInternet3GData
+     *
+     * @return float
+     */
+    public function getPInternet3GData()
+    {
+        return $this->pInternet3GData;
+    }
+    /**
+     * Set pInternet3GDataVoi
+     *
+     * @param float $pInternet3GDataVoi
+     * @return D_parc_abonne
+     */
+    public function setPInternet3GDataVoi($pInternet3GDataVoi)
+    {
+        $this->pInternet3GDataVoix = $pInternet3GDataVoi;
+
+        return $this;
+    }
+
+    /**
+     * Get pInternet3GDataVoi
+     *
+     * @return float
+     */
+    public function getPInternet3GDataVoi()
+    {
+        return $this->pInternet3GDataVoi;
+    }
+
+    // Labihi l Mengouss !! /!\
 
     /**
      * Set pNomDomainMa
