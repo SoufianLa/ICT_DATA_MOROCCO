@@ -1,0 +1,48 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>D_taux_penetration</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ entity.id }}</td>
+            </tr>
+            <tr>
+                <th>Tdate</th>
+                <td>{{ entity.tDate|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Tmobilepostpaye</th>
+                <td>{{ entity.tMobilePostPaye }}</td>
+            </tr>
+            <tr>
+                <th>Tmobileprepaye</th>
+                <td>{{ entity.tMobilePrePaye }}</td>
+            </tr>
+            <tr>
+                <th>Tfixe</th>
+                <td>{{ entity.tFixe }}</td>
+            </tr>
+            <tr>
+                <th>Tinternet</th>
+                <td>{{ entity.tInternet }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('d_taux_penetration') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('d_taux_penetration_edit', { 'id': entity.id }) }}">
+            Edit
+        </a>
+    </li>
+    <li>{{ form(delete_form) }}</li>
+</ul>
+{% endblock %}

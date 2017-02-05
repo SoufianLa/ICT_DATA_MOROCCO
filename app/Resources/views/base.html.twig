@@ -2,9 +2,27 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% block title %}ICT DATA MOROCCO{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <link rel="stylesheet" href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/freelancer.css') }}"  />
+        <link rel="stylesheet" href="{{ asset('vendor/font-awesome/css/font-awesome.min.css') }}"  />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700"  />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"  />
+        <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/datepicker3.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/styles.css') }}" />
+        <script src="{{ asset('js/lumino.glyphs.js') }}"></script>
+        <script src="{{ asset('js/jquery-1.11.1.min.js') }}"></script>
+        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+        <script src="{{ asset('js/chart.min.js') }}"></script>
+        <script src="{{ asset('js/chart-data.js') }}"></script>
+        <script src="{{ asset('js/easypiechart.js') }}"></script>
+        <script src="{{ asset('js/easypiechart-data.js') }}"></script>
+        <script src="{{ asset('js/bootstrap-datepicker.js') }}"></script>
     </head>
     <body>
         {% block body %}{% endblock %}

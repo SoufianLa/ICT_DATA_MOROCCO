@@ -1,3 +1,8 @@
+admin_dashboard:
+    resource: "@AdminDashboardBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 chart:
     resource: "@chartBundle/Resources/config/routing.yml"
     prefix:   /

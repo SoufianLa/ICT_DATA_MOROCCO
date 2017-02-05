@@ -1,5 +1,90 @@
 {% extends '::base.html.twig' %}
 {% block body %}
-    <h1>Formulaire d'enquete : </h1><br />
-    {{ form(f) }}
+    <div class = "container">
+    <div class="wrapper">
+    <h1>Formulaire d'enquete : </h1>{# commentaires#}
+    <div class = "container">
+    <div class="wrapper">
+    {{ form_start(f) }}
+    {{ form_errors(f) }}
+    <div class="form-control">
+     {{ form_errors(f.edate) }}
+
+     {{ form_widget(f.edate) }}
+    </div>
+    <div class="form-control">
+     {{ form_errors(f.eMenagesFixe) }}
+     {{ form_label(f.eMenagesFixe, 'Menage Fixe'|trans) }}
+     {{ form_widget(f.eMenagesFixe) }}
+    </div>
+    <div class="form-control">
+     {{ form_errors(f.eMenagesMobile) }}
+     {{ form_label(f.eMenagesMobile, 'Menage mobile'|trans) }}
+     {{ form_widget(f.eMenagesMobile) }}
+    </div>
+    <div class="form-control">
+            {{ form_errors(f.eIndividusMobile) }}
+            {{ form_label(f.eIndividusMobile, 'individus mobile'|trans) }}
+            {{ form_widget(f.eIndividusMobile) }}
+    </div>
+        <div class="form-control">
+            {{ form_errors(f.eIndividusMobileInternet) }}
+            {{ form_label(f.eIndividusMobileInternet, 'Mobile internet'|trans) }}
+            {{ form_widget(f.eIndividusMobileInternet) }}
+        </div>
+        <div class="form-control">
+            {{ form_errors(f.eIndividusSmartphone) }}
+            {{ form_label(f.eIndividusSmartphone, 'Smartphone'|trans) }}
+            {{ form_widget(f.eIndividusSmartphone) }}
+        </div>
+        <div class="form-control">
+            {{ form_errors(f.eMenagesequOrdinateur) }}
+            {{ form_label(f.eMenagesequOrdinateur, 'Ordinateur'|trans) }}
+            {{ form_widget(f.eMenagesequOrdinateur) }}
+        </div>
+        <div class="form-control">
+            {{ form_errors(f.eMenagesOrdinateurBureau) }}
+            {{ form_label(f.eMenagesOrdinateurBureau, 'Ordinateur Bureau'|trans) }}
+            {{ form_widget(f.eMenagesOrdinateurBureau) }}
+        </div>
+        <div class="form-control">
+            {{ form_errors(f.eMenagesOrdinateurPc) }}
+            {{ form_label(f.eMenagesOrdinateurPc, 'PC'|trans) }}
+            {{ form_widget(f.eMenagesOrdinateurPc) }}
+        </div>
+        <div class="form-control">
+            {{ form_errors(f.eMenagesOrdinateurTablette) }}
+            {{ form_label(f.eMenagesOrdinateurTablette, 'Tablette'|trans) }}
+            {{ form_widget(f.eMenagesOrdinateurTablette) }}
+        </div>
+        <div class="form-control">
+            {{ form_errors(f.eMenagesInternetFixe) }}
+            {{ form_label(f.eMenagesInternetFixe, 'Fixe'|trans) }}
+            {{ form_widget(f.eMenagesInternetFixe) }}
+        </div>
+        <div class="form-control">
+            {{ form_errors(f.eMenagesInternetMobile) }}
+            {{ form_label(f.eMenagesInternetMobile, 'Mobile'|trans) }}
+            {{ form_widget(f.eMenagesInternetMobile) }}
+        </div>
+        <div class="form-control">
+            {{ form_errors(f.eMenagesInternetMobileFixe) }}
+            {{ form_label(f.eMenagesInternetMobileFixe, 'Fixe'|trans) }}
+            {{ form_widget(f.eMenagesInternetMobileFixe) }}
+        </div>
+        <div class="form-control">
+            {{ form_errors(f.eIndividusInternet) }}
+            {{ form_label(f.eIndividusInternet, 'Internet'|trans) }}
+            {{ form_widget(f.eIndividusInternet) }}
+        </div>
+        {{ form_label(f.eIndividusInternet, 'Internet'|trans) }}
+        {{ form_widget(f.eNbrInternautes, { 'attr': {'placeholder': 'eNbrInternautes', 'class': 'form-control'}}) }}
+
+        {{ form_widget(f.Add, { 'attr': {'label': 'Enregistrer', 'class': 'btn btn-primary'}}) }}
+
+    {{ form_end(f) }}
+
+    </div>
+    </div>
+
 {% endblock %}

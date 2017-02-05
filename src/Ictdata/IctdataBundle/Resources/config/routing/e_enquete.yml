@@ -1,0 +1,30 @@
+e_enquete:
+    path:     /
+    defaults: { _controller: "IctdataBundle:E_enquete:index" }
+
+e_enquete_show:
+    path:     /{id}/show
+    defaults: { _controller: "IctdataBundle:E_enquete:show" }
+
+e_enquete_new:
+    path:     /new
+    defaults: { _controller: "IctdataBundle:E_enquete:new" }
+
+e_enquete_create:
+    path:     /create
+    defaults: { _controller: "IctdataBundle:E_enquete:create" }
+    methods:  POST
+
+e_enquete_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "IctdataBundle:E_enquete:edit" }
+
+e_enquete_update:
+    path:     /{id}/update
+    defaults: { _controller: "IctdataBundle:E_enquete:update" }
+    methods:  [POST, PUT]
+
+e_enquete_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "IctdataBundle:E_enquete:delete" }
+    methods:  [POST, DELETE]

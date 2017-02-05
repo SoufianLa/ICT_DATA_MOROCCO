@@ -1,0 +1,48 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>D_revenu_usage</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ entity.id }}</td>
+            </tr>
+            <tr>
+                <th>Rdate</th>
+                <td>{{ entity.rDate|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Rminutecommobile</th>
+                <td>{{ entity.rMinuteComMobile }}</td>
+            </tr>
+            <tr>
+                <th>Rmensuelclientmobile</th>
+                <td>{{ entity.rMensuelClientMobile }}</td>
+            </tr>
+            <tr>
+                <th>Rminutecomfixe</th>
+                <td>{{ entity.rMinuteComFixe }}</td>
+            </tr>
+            <tr>
+                <th>Rmensuelcomfixe</th>
+                <td>{{ entity.rMensuelComFixe }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('d_revenu_usage') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('d_revenu_usage_edit', { 'id': entity.id }) }}">
+            Edit
+        </a>
+    </li>
+    <li>{{ form(delete_form) }}</li>
+</ul>
+{% endblock %}

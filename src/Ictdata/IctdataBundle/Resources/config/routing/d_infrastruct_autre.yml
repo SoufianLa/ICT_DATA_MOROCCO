@@ -1,0 +1,30 @@
+infra:
+    path:     /
+    defaults: { _controller: "IctdataBundle:D_infrastruct_autre:index" }
+
+infra_show:
+    path:     /{id}/show
+    defaults: { _controller: "IctdataBundle:D_infrastruct_autre:show" }
+
+infra_new:
+    path:     /new
+    defaults: { _controller: "IctdataBundle:D_infrastruct_autre:new" }
+
+infra_create:
+    path:     /create
+    defaults: { _controller: "IctdataBundle:D_infrastruct_autre:create" }
+    methods:  POST
+
+infra_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "IctdataBundle:D_infrastruct_autre:edit" }
+
+infra_update:
+    path:     /{id}/update
+    defaults: { _controller: "IctdataBundle:D_infrastruct_autre:update" }
+    methods:  [POST, PUT]
+
+infra_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "IctdataBundle:D_infrastruct_autre:delete" }
+    methods:  [POST, DELETE]

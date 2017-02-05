@@ -22,6 +22,7 @@ class AppKernel extends Kernel
             new Utilisateurs\UtilisateursBundle\UtilisateursBundle(),
             new Ob\HighchartsBundle\ObHighchartsBundle(),
             new Ictdatachart\chartBundle\chartBundle(),
+            new Admin\AdminDashboardBundle\AdminDashboardBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {

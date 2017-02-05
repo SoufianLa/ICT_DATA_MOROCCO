@@ -1,0 +1,61 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>D_infrastruct_autre list</h1>
+
+    <table class="records_list">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Idate</th>
+                <th>Ibpinternet</th>
+                <th>Inbrprestamatotal</th>
+                <th>Inbrprestamanew</th>
+                <th>Inbrlirmarocains</th>
+                <th>Iparcmarocipv4afrinic</th>
+                <th>Istockipv4afrinic</th>
+                <th>Inbripv4allouees</th>
+                <th>Irepartipv4lirmaroc</th>
+                <th>Ietatepuisipv4</th>
+                <th>Iplageipv6maroc</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('infra_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+                <td>{% if entity.iDate %}{{ entity.iDate|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{{ entity.iBpInternet }}</td>
+                <td>{{ entity.iNbrPrestaMaTotal }}</td>
+                <td>{{ entity.iNbrPrestaMaNew }}</td>
+                <td>{{ entity.iNbrLirMarocains }}</td>
+                <td>{{ entity.iParcMarocIpv4Afrinic }}</td>
+                <td>{{ entity.iStockIpv4Afrinic }}</td>
+                <td>{{ entity.iNbrIpv4Allouees }}</td>
+                <td>{{ entity.iRepartIpv4LirMaroc }}</td>
+                <td>{{ entity.iEtatEpuisIpv4 }}</td>
+                <td>{{ entity.iPlageIpv6Maroc }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('infra_show', { 'id': entity.id }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('infra_edit', { 'id': entity.id }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('infra_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

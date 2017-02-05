@@ -1,0 +1,49 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>D_taux_penetration list</h1>
+
+    <table class="records_list">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Tdate</th>
+                <th>Tmobilepostpaye</th>
+                <th>Tmobileprepaye</th>
+                <th>Tfixe</th>
+                <th>Tinternet</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('d_taux_penetration_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+                <td>{% if entity.tDate %}{{ entity.tDate|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{{ entity.tMobilePostPaye }}</td>
+                <td>{{ entity.tMobilePrePaye }}</td>
+                <td>{{ entity.tFixe }}</td>
+                <td>{{ entity.tInternet }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('d_taux_penetration_show', { 'id': entity.id }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('d_taux_penetration_edit', { 'id': entity.id }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('d_taux_penetration_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

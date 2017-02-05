@@ -1,3 +1,31 @@
+ictdata_e_enquete:
+    resource: "@IctdataBundle/Resources/config/routing/e_enquete.yml"
+    prefix:   /e_enquete
+
+ictdata_d_trafic:
+    resource: "@IctdataBundle/Resources/config/routing/d_trafic.yml"
+    prefix:   /d_trafic
+
+ictdata_d_taux_penetration:
+    resource: "@IctdataBundle/Resources/config/routing/d_taux_penetration.yml"
+    prefix:   /d_taux_penetration
+
+ictdata_d_revenu_usage:
+    resource: "@IctdataBundle/Resources/config/routing/d_revenu_usage.yml"
+    prefix:   /d_revenu_usage
+
+ictdata_d_part_marche:
+    resource: "@IctdataBundle/Resources/config/routing/d_part_marche.yml"
+    prefix:   /d_part_marche
+
+ictdata_d_parc_abonne:
+    resource: "@IctdataBundle/Resources/config/routing/d_parc_abonne.yml"
+    prefix:   /d_parc_abonne
+
+ictdata_infra:
+    resource: "@IctdataBundle/Resources/config/routing/d_infrastruct_autre.yml"
+    prefix:   /infra
+
 ictdata_homepage:
     path:     /index
     defaults: { _controller: IctdataBundle:Ictdata:index }

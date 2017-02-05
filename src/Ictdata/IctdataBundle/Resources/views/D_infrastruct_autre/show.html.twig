@@ -1,0 +1,72 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>D_infrastruct_autre</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ entity.id }}</td>
+            </tr>
+            <tr>
+                <th>Idate</th>
+                <td>{{ entity.iDate|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Ibpinternet</th>
+                <td>{{ entity.iBpInternet }}</td>
+            </tr>
+            <tr>
+                <th>Inbrprestamatotal</th>
+                <td>{{ entity.iNbrPrestaMaTotal }}</td>
+            </tr>
+            <tr>
+                <th>Inbrprestamanew</th>
+                <td>{{ entity.iNbrPrestaMaNew }}</td>
+            </tr>
+            <tr>
+                <th>Inbrlirmarocains</th>
+                <td>{{ entity.iNbrLirMarocains }}</td>
+            </tr>
+            <tr>
+                <th>Iparcmarocipv4afrinic</th>
+                <td>{{ entity.iParcMarocIpv4Afrinic }}</td>
+            </tr>
+            <tr>
+                <th>Istockipv4afrinic</th>
+                <td>{{ entity.iStockIpv4Afrinic }}</td>
+            </tr>
+            <tr>
+                <th>Inbripv4allouees</th>
+                <td>{{ entity.iNbrIpv4Allouees }}</td>
+            </tr>
+            <tr>
+                <th>Irepartipv4lirmaroc</th>
+                <td>{{ entity.iRepartIpv4LirMaroc }}</td>
+            </tr>
+            <tr>
+                <th>Ietatepuisipv4</th>
+                <td>{{ entity.iEtatEpuisIpv4 }}</td>
+            </tr>
+            <tr>
+                <th>Iplageipv6maroc</th>
+                <td>{{ entity.iPlageIpv6Maroc }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('infra') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('infra_edit', { 'id': entity.id }) }}">
+            Edit
+        </a>
+    </li>
+    <li>{{ form(delete_form) }}</li>
+</ul>
+{% endblock %}

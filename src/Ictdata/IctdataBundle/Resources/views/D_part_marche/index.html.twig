@@ -1,0 +1,77 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>D_part_marche list</h1>
+
+    <table class="records_list">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Partdate</th>
+                <th>Partparcmobilepostiam</th>
+                <th>Partparcmobilepreiam</th>
+                <th>Partparcmobilepostmed</th>
+                <th>Partparcmobilepremed</th>
+                <th>Partparcmobilepostwana</th>
+                <th>Partparcmobileprewana</th>
+                <th>Partparcfixeresidiam</th>
+                <th>Partparcfixeprofiam</th>
+                <th>Partparcfixeresidmed</th>
+                <th>Partparcfixeprofmed</th>
+                <th>Partparcfixeresidwana</th>
+                <th>Partparcfixeprofwana</th>
+                <th>Partparclignespubliiam</th>
+                <th>Partparclignespublimed</th>
+                <th>Partparcinternetadsliam</th>
+                <th>Partparcinternetmobileiam</th>
+                <th>Partparcinternetadslmed</th>
+                <th>Partparcinternetmobilemed</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('d_part_marche_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+                <td>{% if entity.partDate %}{{ entity.partDate|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{{ entity.partParcMobilePostIam }}</td>
+                <td>{{ entity.partParcMobilePreIam }}</td>
+                <td>{{ entity.partParcMobilePostMed }}</td>
+                <td>{{ entity.partParcMobilePreMed }}</td>
+                <td>{{ entity.partParcMobilePostWana }}</td>
+                <td>{{ entity.partParcMobilePreWana }}</td>
+                <td>{{ entity.partParcFixeResidIam }}</td>
+                <td>{{ entity.partParcFixeProfIam }}</td>
+                <td>{{ entity.partParcFixeResidMed }}</td>
+                <td>{{ entity.partParcFixeProfMed }}</td>
+                <td>{{ entity.partParcFixeResidWana }}</td>
+                <td>{{ entity.partParcFixeProfWana }}</td>
+                <td>{{ entity.partParcLignesPubliIam }}</td>
+                <td>{{ entity.partParcLignesPubliMed }}</td>
+                <td>{{ entity.partParcInternetAdslIam }}</td>
+                <td>{{ entity.partParcInternetMobileIam }}</td>
+                <td>{{ entity.partParcInternetAdslMed }}</td>
+                <td>{{ entity.partParcInternetMobileMed }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('d_part_marche_show', { 'id': entity.id }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('d_part_marche_edit', { 'id': entity.id }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('d_part_marche_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

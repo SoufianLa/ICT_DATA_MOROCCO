@@ -1,0 +1,30 @@
+d_trafic:
+    path:     /
+    defaults: { _controller: "IctdataBundle:D_trafic:index" }
+
+d_trafic_show:
+    path:     /{id}/show
+    defaults: { _controller: "IctdataBundle:D_trafic:show" }
+
+d_trafic_new:
+    path:     /new
+    defaults: { _controller: "IctdataBundle:D_trafic:new" }
+
+d_trafic_create:
+    path:     /create
+    defaults: { _controller: "IctdataBundle:D_trafic:create" }
+    methods:  POST
+
+d_trafic_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "IctdataBundle:D_trafic:edit" }
+
+d_trafic_update:
+    path:     /{id}/update
+    defaults: { _controller: "IctdataBundle:D_trafic:update" }
+    methods:  [POST, PUT]
+
+d_trafic_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "IctdataBundle:D_trafic:delete" }
+    methods:  [POST, DELETE]

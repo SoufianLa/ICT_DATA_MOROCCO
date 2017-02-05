@@ -13,3 +13,6 @@ chart_ecomputer:
 chart_einternet:
     path:     /charteint
     defaults: { _controller: chartBundle:Chartemobile:charteinternet }
+chart_dns:
+    path:     /chartdns
+    defaults: { _controller: chartBundle:Dns:dns}

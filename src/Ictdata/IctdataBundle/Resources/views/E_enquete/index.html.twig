@@ -1,0 +1,69 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>E_enquete list</h1>
+
+    <table class="records_list">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Edate</th>
+                <th>Emenagesfixe</th>
+                <th>Emenagesmobile</th>
+                <th>Eindividusmobile</th>
+                <th>Eindividusmobileinternet</th>
+                <th>Eindividussmartphone</th>
+                <th>Emenagesequordinateur</th>
+                <th>Emenagesordinateurbureau</th>
+                <th>Emenagesordinateurpc</th>
+                <th>Emenagesordinateurtablette</th>
+                <th>Emenagesinternetfixe</th>
+                <th>Emenagesinternetmobile</th>
+                <th>Emenagesinternetmobilefixe</th>
+                <th>Eindividusinternet</th>
+                <th>Enbrinternautes</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('e_enquete_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+                <td>{% if entity.eDate %}{{ entity.eDate|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{{ entity.eMenagesFixe }}</td>
+                <td>{{ entity.eMenagesMobile }}</td>
+                <td>{{ entity.eIndividusMobile }}</td>
+                <td>{{ entity.eIndividusMobileInternet }}</td>
+                <td>{{ entity.eIndividusSmartphone }}</td>
+                <td>{{ entity.eMenagesequOrdinateur }}</td>
+                <td>{{ entity.eMenagesOrdinateurBureau }}</td>
+                <td>{{ entity.eMenagesOrdinateurPc }}</td>
+                <td>{{ entity.eMenagesOrdinateurTablette }}</td>
+                <td>{{ entity.eMenagesInternetFixe }}</td>
+                <td>{{ entity.eMenagesInternetMobile }}</td>
+                <td>{{ entity.eMenagesInternetMobileFixe }}</td>
+                <td>{{ entity.eIndividusInternet }}</td>
+                <td>{{ entity.eNbrInternautes }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('e_enquete_show', { 'id': entity.id }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('e_enquete_edit', { 'id': entity.id }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('e_enquete_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

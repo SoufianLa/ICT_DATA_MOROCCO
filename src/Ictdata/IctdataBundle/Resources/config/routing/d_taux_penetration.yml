@@ -1,0 +1,30 @@
+d_taux_penetration:
+    path:     /
+    defaults: { _controller: "IctdataBundle:D_taux_penetration:index" }
+
+d_taux_penetration_show:
+    path:     /{id}/show
+    defaults: { _controller: "IctdataBundle:D_taux_penetration:show" }
+
+d_taux_penetration_new:
+    path:     /new
+    defaults: { _controller: "IctdataBundle:D_taux_penetration:new" }
+
+d_taux_penetration_create:
+    path:     /create
+    defaults: { _controller: "IctdataBundle:D_taux_penetration:create" }
+    methods:  POST
+
+d_taux_penetration_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "IctdataBundle:D_taux_penetration:edit" }
+
+d_taux_penetration_update:
+    path:     /{id}/update
+    defaults: { _controller: "IctdataBundle:D_taux_penetration:update" }
+    methods:  [POST, PUT]
+
+d_taux_penetration_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "IctdataBundle:D_taux_penetration:delete" }
+    methods:  [POST, DELETE]

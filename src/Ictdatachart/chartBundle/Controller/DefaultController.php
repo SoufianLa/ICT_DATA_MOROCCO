@@ -64,7 +64,9 @@ class DefaultController extends Controller
 
         $oc = new Highchart();
         $oc->chart->renderTo('piechart');
-        $oc->title->text('Browser market shares at a specific website in 2010');
+        $oc->chart->name('Browser share');
+        $oc->title->text('Indicators in 2010');
+        $oc->chart->type('pie');
         $oc->plotOptions->pie(array(
             'allowPointSelect'  => true,
             'cursor'    => 'pointer',
@@ -72,17 +74,16 @@ class DefaultController extends Controller
             'showInLegend'  => true
         ));
 
-        /*var_dump($data);
-        $data = array(
+        //var_dump($data);
+        $data1 = array(
             array('Firefox', 45.0),
             array('IE', 26.8),
             array('Chrome', 12.8),
             array('Safari', 8.5),
             array('Opera', 6.2),
             array('Others', 0.7),
-        );*/
-        $oc->series(array(array('type' => 'pie','name' => 'Browser share', 'data' => $data)));
-
+        );
+        $oc->series(array(array('name' => 'Browser share', 'data' => $data1)));
         //
         // new chart
         $series = array(

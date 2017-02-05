@@ -1,0 +1,104 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>D_part_marche</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ entity.id }}</td>
+            </tr>
+            <tr>
+                <th>Partdate</th>
+                <td>{{ entity.partDate|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Partparcmobilepostiam</th>
+                <td>{{ entity.partParcMobilePostIam }}</td>
+            </tr>
+            <tr>
+                <th>Partparcmobilepreiam</th>
+                <td>{{ entity.partParcMobilePreIam }}</td>
+            </tr>
+            <tr>
+                <th>Partparcmobilepostmed</th>
+                <td>{{ entity.partParcMobilePostMed }}</td>
+            </tr>
+            <tr>
+                <th>Partparcmobilepremed</th>
+                <td>{{ entity.partParcMobilePreMed }}</td>
+            </tr>
+            <tr>
+                <th>Partparcmobilepostwana</th>
+                <td>{{ entity.partParcMobilePostWana }}</td>
+            </tr>
+            <tr>
+                <th>Partparcmobileprewana</th>
+                <td>{{ entity.partParcMobilePreWana }}</td>
+            </tr>
+            <tr>
+                <th>Partparcfixeresidiam</th>
+                <td>{{ entity.partParcFixeResidIam }}</td>
+            </tr>
+            <tr>
+                <th>Partparcfixeprofiam</th>
+                <td>{{ entity.partParcFixeProfIam }}</td>
+            </tr>
+            <tr>
+                <th>Partparcfixeresidmed</th>
+                <td>{{ entity.partParcFixeResidMed }}</td>
+            </tr>
+            <tr>
+                <th>Partparcfixeprofmed</th>
+                <td>{{ entity.partParcFixeProfMed }}</td>
+            </tr>
+            <tr>
+                <th>Partparcfixeresidwana</th>
+                <td>{{ entity.partParcFixeResidWana }}</td>
+            </tr>
+            <tr>
+                <th>Partparcfixeprofwana</th>
+                <td>{{ entity.partParcFixeProfWana }}</td>
+            </tr>
+            <tr>
+                <th>Partparclignespubliiam</th>
+                <td>{{ entity.partParcLignesPubliIam }}</td>
+            </tr>
+            <tr>
+                <th>Partparclignespublimed</th>
+                <td>{{ entity.partParcLignesPubliMed }}</td>
+            </tr>
+            <tr>
+                <th>Partparcinternetadsliam</th>
+                <td>{{ entity.partParcInternetAdslIam }}</td>
+            </tr>
+            <tr>
+                <th>Partparcinternetmobileiam</th>
+                <td>{{ entity.partParcInternetMobileIam }}</td>
+            </tr>
+            <tr>
+                <th>Partparcinternetadslmed</th>
+                <td>{{ entity.partParcInternetAdslMed }}</td>
+            </tr>
+            <tr>
+                <th>Partparcinternetmobilemed</th>
+                <td>{{ entity.partParcInternetMobileMed }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('d_part_marche') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('d_part_marche_edit', { 'id': entity.id }) }}">
+            Edit
+        </a>
+    </li>
+    <li>{{ form(delete_form) }}</li>
+</ul>
+{% endblock %}

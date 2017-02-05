@@ -1,0 +1,30 @@
+d_parc_abonne:
+    path:     /
+    defaults: { _controller: "IctdataBundle:D_parc_abonne:index" }
+
+d_parc_abonne_show:
+    path:     /{id}/show
+    defaults: { _controller: "IctdataBundle:D_parc_abonne:show" }
+
+d_parc_abonne_new:
+    path:     /new
+    defaults: { _controller: "IctdataBundle:D_parc_abonne:new" }
+
+d_parc_abonne_create:
+    path:     /create
+    defaults: { _controller: "IctdataBundle:D_parc_abonne:create" }
+    methods:  POST
+
+d_parc_abonne_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "IctdataBundle:D_parc_abonne:edit" }
+
+d_parc_abonne_update:
+    path:     /{id}/update
+    defaults: { _controller: "IctdataBundle:D_parc_abonne:update" }
+    methods:  [POST, PUT]
+
+d_parc_abonne_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "IctdataBundle:D_parc_abonne:delete" }
+    methods:  [POST, DELETE]

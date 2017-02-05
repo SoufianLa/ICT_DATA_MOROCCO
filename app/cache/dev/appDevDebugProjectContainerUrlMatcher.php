@@ -127,6 +127,11 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
         }
 
+        // admin_admindashboard_default_index
+        if ($pathinfo === '/admin_dash') {
+            return array (  '_controller' => 'Admin\\AdminDashboardBundle\\Controller\\DefaultController::indexAction',  '_route' => 'admin_admindashboard_default_index',);
+        }
+
         if (0 === strpos($pathinfo, '/chart')) {
             // chart_homepage
             if ($pathinfo === '/chart') {
@@ -154,6 +159,11 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                     return array (  '_controller' => 'Ictdatachart\\chartBundle\\Controller\\ChartemobileController::charteinternetAction',  '_route' => 'chart_einternet',);
                 }
 
+            }
+
+            // chart_dns
+            if ($pathinfo === '/chartdns') {
+                return array (  '_controller' => 'Ictdatachart\\chartBundle\\Controller\\DnsController::dnsAction',  '_route' => 'chart_dns',);
             }
 
         }
@@ -344,9 +354,441 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
         }
         not_fos_user_change_password:
 
-        // ictdata_homepage
-        if ($pathinfo === '/index') {
-            return array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\IctdataController::indexAction',  '_route' => 'ictdata_homepage',);
+        if (0 === strpos($pathinfo, '/e_enquete')) {
+            // e_enquete
+            if (rtrim($pathinfo, '/') === '/e_enquete') {
+                if (substr($pathinfo, -1) !== '/') {
+                    return $this->redirect($pathinfo.'/', 'e_enquete');
+                }
+
+                return array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\E_enqueteController::indexAction',  '_route' => 'e_enquete',);
+            }
+
+            // e_enquete_show
+            if (preg_match('#^/e_enquete/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'e_enquete_show')), array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\E_enqueteController::showAction',));
+            }
+
+            // e_enquete_new
+            if ($pathinfo === '/e_enquete/new') {
+                return array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\E_enqueteController::newAction',  '_route' => 'e_enquete_new',);
+            }
+
+            // e_enquete_create
+            if ($pathinfo === '/e_enquete/create') {
+                if ($this->context->getMethod() != 'POST') {
+                    $allow[] = 'POST';
+                    goto not_e_enquete_create;
+                }
+
+                return array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\E_enqueteController::createAction',  '_route' => 'e_enquete_create',);
+            }
+            not_e_enquete_create:
+
+            // e_enquete_edit
+            if (preg_match('#^/e_enquete/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'e_enquete_edit')), array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\E_enqueteController::editAction',));
+            }
+
+            // e_enquete_update
+            if (preg_match('#^/e_enquete/(?P<id>[^/]++)/update$#s', $pathinfo, $matches)) {
+                if (!in_array($this->context->getMethod(), array('POST', 'PUT'))) {
+                    $allow = array_merge($allow, array('POST', 'PUT'));
+                    goto not_e_enquete_update;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'e_enquete_update')), array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\E_enqueteController::updateAction',));
+            }
+            not_e_enquete_update:
+
+            // e_enquete_delete
+            if (preg_match('#^/e_enquete/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
+                if (!in_array($this->context->getMethod(), array('POST', 'DELETE'))) {
+                    $allow = array_merge($allow, array('POST', 'DELETE'));
+                    goto not_e_enquete_delete;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'e_enquete_delete')), array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\E_enqueteController::deleteAction',));
+            }
+            not_e_enquete_delete:
+
+        }
+
+        if (0 === strpos($pathinfo, '/d_')) {
+            if (0 === strpos($pathinfo, '/d_t')) {
+                if (0 === strpos($pathinfo, '/d_trafic')) {
+                    // d_trafic
+                    if (rtrim($pathinfo, '/') === '/d_trafic') {
+                        if (substr($pathinfo, -1) !== '/') {
+                            return $this->redirect($pathinfo.'/', 'd_trafic');
+                        }
+
+                        return array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\D_traficController::indexAction',  '_route' => 'd_trafic',);
+                    }
+
+                    // d_trafic_show
+                    if (preg_match('#^/d_trafic/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'd_trafic_show')), array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\D_traficController::showAction',));
+                    }
+
+                    // d_trafic_new
+                    if ($pathinfo === '/d_trafic/new') {
+                        return array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\D_traficController::newAction',  '_route' => 'd_trafic_new',);
+                    }
+
+                    // d_trafic_create
+                    if ($pathinfo === '/d_trafic/create') {
+                        if ($this->context->getMethod() != 'POST') {
+                            $allow[] = 'POST';
+                            goto not_d_trafic_create;
+                        }
+
+                        return array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\D_traficController::createAction',  '_route' => 'd_trafic_create',);
+                    }
+                    not_d_trafic_create:
+
+                    // d_trafic_edit
+                    if (preg_match('#^/d_trafic/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'd_trafic_edit')), array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\D_traficController::editAction',));
+                    }
+
+                    // d_trafic_update
+                    if (preg_match('#^/d_trafic/(?P<id>[^/]++)/update$#s', $pathinfo, $matches)) {
+                        if (!in_array($this->context->getMethod(), array('POST', 'PUT'))) {
+                            $allow = array_merge($allow, array('POST', 'PUT'));
+                            goto not_d_trafic_update;
+                        }
+
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'd_trafic_update')), array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\D_traficController::updateAction',));
+                    }
+                    not_d_trafic_update:
+
+                    // d_trafic_delete
+                    if (preg_match('#^/d_trafic/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
+                        if (!in_array($this->context->getMethod(), array('POST', 'DELETE'))) {
+                            $allow = array_merge($allow, array('POST', 'DELETE'));
+                            goto not_d_trafic_delete;
+                        }
+
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'd_trafic_delete')), array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\D_traficController::deleteAction',));
+                    }
+                    not_d_trafic_delete:
+
+                }
+
+                if (0 === strpos($pathinfo, '/d_taux_penetration')) {
+                    // d_taux_penetration
+                    if (rtrim($pathinfo, '/') === '/d_taux_penetration') {
+                        if (substr($pathinfo, -1) !== '/') {
+                            return $this->redirect($pathinfo.'/', 'd_taux_penetration');
+                        }
+
+                        return array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\D_taux_penetrationController::indexAction',  '_route' => 'd_taux_penetration',);
+                    }
+
+                    // d_taux_penetration_show
+                    if (preg_match('#^/d_taux_penetration/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'd_taux_penetration_show')), array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\D_taux_penetrationController::showAction',));
+                    }
+
+                    // d_taux_penetration_new
+                    if ($pathinfo === '/d_taux_penetration/new') {
+                        return array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\D_taux_penetrationController::newAction',  '_route' => 'd_taux_penetration_new',);
+                    }
+
+                    // d_taux_penetration_create
+                    if ($pathinfo === '/d_taux_penetration/create') {
+                        if ($this->context->getMethod() != 'POST') {
+                            $allow[] = 'POST';
+                            goto not_d_taux_penetration_create;
+                        }
+
+                        return array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\D_taux_penetrationController::createAction',  '_route' => 'd_taux_penetration_create',);
+                    }
+                    not_d_taux_penetration_create:
+
+                    // d_taux_penetration_edit
+                    if (preg_match('#^/d_taux_penetration/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'd_taux_penetration_edit')), array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\D_taux_penetrationController::editAction',));
+                    }
+
+                    // d_taux_penetration_update
+                    if (preg_match('#^/d_taux_penetration/(?P<id>[^/]++)/update$#s', $pathinfo, $matches)) {
+                        if (!in_array($this->context->getMethod(), array('POST', 'PUT'))) {
+                            $allow = array_merge($allow, array('POST', 'PUT'));
+                            goto not_d_taux_penetration_update;
+                        }
+
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'd_taux_penetration_update')), array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\D_taux_penetrationController::updateAction',));
+                    }
+                    not_d_taux_penetration_update:
+
+                    // d_taux_penetration_delete
+                    if (preg_match('#^/d_taux_penetration/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
+                        if (!in_array($this->context->getMethod(), array('POST', 'DELETE'))) {
+                            $allow = array_merge($allow, array('POST', 'DELETE'));
+                            goto not_d_taux_penetration_delete;
+                        }
+
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'd_taux_penetration_delete')), array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\D_taux_penetrationController::deleteAction',));
+                    }
+                    not_d_taux_penetration_delete:
+
+                }
+
+            }
+
+            if (0 === strpos($pathinfo, '/d_revenu_usage')) {
+                // d_revenu_usage
+                if (rtrim($pathinfo, '/') === '/d_revenu_usage') {
+                    if (substr($pathinfo, -1) !== '/') {
+                        return $this->redirect($pathinfo.'/', 'd_revenu_usage');
+                    }
+
+                    return array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\D_revenu_usageController::indexAction',  '_route' => 'd_revenu_usage',);
+                }
+
+                // d_revenu_usage_show
+                if (preg_match('#^/d_revenu_usage/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'd_revenu_usage_show')), array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\D_revenu_usageController::showAction',));
+                }
+
+                // d_revenu_usage_new
+                if ($pathinfo === '/d_revenu_usage/new') {
+                    return array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\D_revenu_usageController::newAction',  '_route' => 'd_revenu_usage_new',);
+                }
+
+                // d_revenu_usage_create
+                if ($pathinfo === '/d_revenu_usage/create') {
+                    if ($this->context->getMethod() != 'POST') {
+                        $allow[] = 'POST';
+                        goto not_d_revenu_usage_create;
+                    }
+
+                    return array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\D_revenu_usageController::createAction',  '_route' => 'd_revenu_usage_create',);
+                }
+                not_d_revenu_usage_create:
+
+                // d_revenu_usage_edit
+                if (preg_match('#^/d_revenu_usage/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'd_revenu_usage_edit')), array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\D_revenu_usageController::editAction',));
+                }
+
+                // d_revenu_usage_update
+                if (preg_match('#^/d_revenu_usage/(?P<id>[^/]++)/update$#s', $pathinfo, $matches)) {
+                    if (!in_array($this->context->getMethod(), array('POST', 'PUT'))) {
+                        $allow = array_merge($allow, array('POST', 'PUT'));
+                        goto not_d_revenu_usage_update;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'd_revenu_usage_update')), array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\D_revenu_usageController::updateAction',));
+                }
+                not_d_revenu_usage_update:
+
+                // d_revenu_usage_delete
+                if (preg_match('#^/d_revenu_usage/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
+                    if (!in_array($this->context->getMethod(), array('POST', 'DELETE'))) {
+                        $allow = array_merge($allow, array('POST', 'DELETE'));
+                        goto not_d_revenu_usage_delete;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'd_revenu_usage_delete')), array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\D_revenu_usageController::deleteAction',));
+                }
+                not_d_revenu_usage_delete:
+
+            }
+
+            if (0 === strpos($pathinfo, '/d_par')) {
+                if (0 === strpos($pathinfo, '/d_part_marche')) {
+                    // d_part_marche
+                    if (rtrim($pathinfo, '/') === '/d_part_marche') {
+                        if (substr($pathinfo, -1) !== '/') {
+                            return $this->redirect($pathinfo.'/', 'd_part_marche');
+                        }
+
+                        return array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\D_part_marcheController::indexAction',  '_route' => 'd_part_marche',);
+                    }
+
+                    // d_part_marche_show
+                    if (preg_match('#^/d_part_marche/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'd_part_marche_show')), array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\D_part_marcheController::showAction',));
+                    }
+
+                    // d_part_marche_new
+                    if ($pathinfo === '/d_part_marche/new') {
+                        return array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\D_part_marcheController::newAction',  '_route' => 'd_part_marche_new',);
+                    }
+
+                    // d_part_marche_create
+                    if ($pathinfo === '/d_part_marche/create') {
+                        if ($this->context->getMethod() != 'POST') {
+                            $allow[] = 'POST';
+                            goto not_d_part_marche_create;
+                        }
+
+                        return array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\D_part_marcheController::createAction',  '_route' => 'd_part_marche_create',);
+                    }
+                    not_d_part_marche_create:
+
+                    // d_part_marche_edit
+                    if (preg_match('#^/d_part_marche/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'd_part_marche_edit')), array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\D_part_marcheController::editAction',));
+                    }
+
+                    // d_part_marche_update
+                    if (preg_match('#^/d_part_marche/(?P<id>[^/]++)/update$#s', $pathinfo, $matches)) {
+                        if (!in_array($this->context->getMethod(), array('POST', 'PUT'))) {
+                            $allow = array_merge($allow, array('POST', 'PUT'));
+                            goto not_d_part_marche_update;
+                        }
+
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'd_part_marche_update')), array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\D_part_marcheController::updateAction',));
+                    }
+                    not_d_part_marche_update:
+
+                    // d_part_marche_delete
+                    if (preg_match('#^/d_part_marche/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
+                        if (!in_array($this->context->getMethod(), array('POST', 'DELETE'))) {
+                            $allow = array_merge($allow, array('POST', 'DELETE'));
+                            goto not_d_part_marche_delete;
+                        }
+
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'd_part_marche_delete')), array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\D_part_marcheController::deleteAction',));
+                    }
+                    not_d_part_marche_delete:
+
+                }
+
+                if (0 === strpos($pathinfo, '/d_parc_abonne')) {
+                    // d_parc_abonne
+                    if (rtrim($pathinfo, '/') === '/d_parc_abonne') {
+                        if (substr($pathinfo, -1) !== '/') {
+                            return $this->redirect($pathinfo.'/', 'd_parc_abonne');
+                        }
+
+                        return array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\D_parc_abonneController::indexAction',  '_route' => 'd_parc_abonne',);
+                    }
+
+                    // d_parc_abonne_show
+                    if (preg_match('#^/d_parc_abonne/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'd_parc_abonne_show')), array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\D_parc_abonneController::showAction',));
+                    }
+
+                    // d_parc_abonne_new
+                    if ($pathinfo === '/d_parc_abonne/new') {
+                        return array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\D_parc_abonneController::newAction',  '_route' => 'd_parc_abonne_new',);
+                    }
+
+                    // d_parc_abonne_create
+                    if ($pathinfo === '/d_parc_abonne/create') {
+                        if ($this->context->getMethod() != 'POST') {
+                            $allow[] = 'POST';
+                            goto not_d_parc_abonne_create;
+                        }
+
+                        return array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\D_parc_abonneController::createAction',  '_route' => 'd_parc_abonne_create',);
+                    }
+                    not_d_parc_abonne_create:
+
+                    // d_parc_abonne_edit
+                    if (preg_match('#^/d_parc_abonne/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'd_parc_abonne_edit')), array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\D_parc_abonneController::editAction',));
+                    }
+
+                    // d_parc_abonne_update
+                    if (preg_match('#^/d_parc_abonne/(?P<id>[^/]++)/update$#s', $pathinfo, $matches)) {
+                        if (!in_array($this->context->getMethod(), array('POST', 'PUT'))) {
+                            $allow = array_merge($allow, array('POST', 'PUT'));
+                            goto not_d_parc_abonne_update;
+                        }
+
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'd_parc_abonne_update')), array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\D_parc_abonneController::updateAction',));
+                    }
+                    not_d_parc_abonne_update:
+
+                    // d_parc_abonne_delete
+                    if (preg_match('#^/d_parc_abonne/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
+                        if (!in_array($this->context->getMethod(), array('POST', 'DELETE'))) {
+                            $allow = array_merge($allow, array('POST', 'DELETE'));
+                            goto not_d_parc_abonne_delete;
+                        }
+
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'd_parc_abonne_delete')), array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\D_parc_abonneController::deleteAction',));
+                    }
+                    not_d_parc_abonne_delete:
+
+                }
+
+            }
+
+        }
+
+        if (0 === strpos($pathinfo, '/in')) {
+            if (0 === strpos($pathinfo, '/infra')) {
+                // infra
+                if (rtrim($pathinfo, '/') === '/infra') {
+                    if (substr($pathinfo, -1) !== '/') {
+                        return $this->redirect($pathinfo.'/', 'infra');
+                    }
+
+                    return array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\D_infrastruct_autreController::indexAction',  '_route' => 'infra',);
+                }
+
+                // infra_show
+                if (preg_match('#^/infra/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'infra_show')), array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\D_infrastruct_autreController::showAction',));
+                }
+
+                // infra_new
+                if ($pathinfo === '/infra/new') {
+                    return array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\D_infrastruct_autreController::newAction',  '_route' => 'infra_new',);
+                }
+
+                // infra_create
+                if ($pathinfo === '/infra/create') {
+                    if ($this->context->getMethod() != 'POST') {
+                        $allow[] = 'POST';
+                        goto not_infra_create;
+                    }
+
+                    return array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\D_infrastruct_autreController::createAction',  '_route' => 'infra_create',);
+                }
+                not_infra_create:
+
+                // infra_edit
+                if (preg_match('#^/infra/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'infra_edit')), array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\D_infrastruct_autreController::editAction',));
+                }
+
+                // infra_update
+                if (preg_match('#^/infra/(?P<id>[^/]++)/update$#s', $pathinfo, $matches)) {
+                    if (!in_array($this->context->getMethod(), array('POST', 'PUT'))) {
+                        $allow = array_merge($allow, array('POST', 'PUT'));
+                        goto not_infra_update;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'infra_update')), array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\D_infrastruct_autreController::updateAction',));
+                }
+                not_infra_update:
+
+                // infra_delete
+                if (preg_match('#^/infra/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
+                    if (!in_array($this->context->getMethod(), array('POST', 'DELETE'))) {
+                        $allow = array_merge($allow, array('POST', 'DELETE'));
+                        goto not_infra_delete;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'infra_delete')), array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\D_infrastruct_autreController::deleteAction',));
+                }
+                not_infra_delete:
+
+            }
+
+            // ictdata_homepage
+            if ($pathinfo === '/index') {
+                return array (  '_controller' => 'Ictdata\\IctdataBundle\\Controller\\IctdataController::indexAction',  '_route' => 'ictdata_homepage',);
+            }
+
         }
 
         if (0 === strpos($pathinfo, '/gr')) {

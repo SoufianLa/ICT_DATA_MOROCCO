@@ -1,0 +1,30 @@
+d_revenu_usage:
+    path:     /
+    defaults: { _controller: "IctdataBundle:D_revenu_usage:index" }
+
+d_revenu_usage_show:
+    path:     /{id}/show
+    defaults: { _controller: "IctdataBundle:D_revenu_usage:show" }
+
+d_revenu_usage_new:
+    path:     /new
+    defaults: { _controller: "IctdataBundle:D_revenu_usage:new" }
+
+d_revenu_usage_create:
+    path:     /create
+    defaults: { _controller: "IctdataBundle:D_revenu_usage:create" }
+    methods:  POST
+
+d_revenu_usage_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "IctdataBundle:D_revenu_usage:edit" }
+
+d_revenu_usage_update:
+    path:     /{id}/update
+    defaults: { _controller: "IctdataBundle:D_revenu_usage:update" }
+    methods:  [POST, PUT]
+
+d_revenu_usage_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "IctdataBundle:D_revenu_usage:delete" }
+    methods:  [POST, DELETE]

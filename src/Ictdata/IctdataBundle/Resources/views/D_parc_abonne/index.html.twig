@@ -1,0 +1,107 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>D_parc_abonne list</h1>
+
+    <table class="records_list">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Pdate</th>
+                <th>Pmobilepostpaye</th>
+                <th>Pmobileprepaye</th>
+                <th>Pfixemobiliterestreinte</th>
+                <th>Pfixeresidentiel</th>
+                <th>Pfixeprofessionnel</th>
+                <th>Pfixeglobal</th>
+                <th>Ppubliphonelignes</th>
+                <th>Pinternetglobaleadsl</th>
+                <th>Pinternetglobalemobile</th>
+                <th>Pinternetglobaleautre</th>
+                <th>Pinternetbasdebit</th>
+                <th>Pinternet</th>
+                <th>Pinternetclassique</th>
+                <th>Pinternetforfait</th>
+                <th>Pinternetadsl</th>
+                <th>Pinternetadsldebit128k</th>
+                <th>Pinternetadsldebit153k</th>
+                <th>Pinternetadsldebit256k</th>
+                <th>Pinternetadsldebit512k</th>
+                <th>Pinternetadsldebit1024k</th>
+                <th>Pinternetadsldebit2m</th>
+                <th>Pinternetadsldebit4m</th>
+                <th>Pinternetadsldebit8m</th>
+                <th>Pinternetadsldebit12m</th>
+                <th>Pinternetadsldebit20m</th>
+                <th>Pllinternet</th>
+                <th>Pinternet3g</th>
+                <th>Pinternet3gdata</th>
+                <th>Pinternet3gdatavoi</th>
+                <th>Pnomdomainma</th>
+                <th>Prepartma</th>
+                <th>Prepartautre</th>
+                <th>Pnewenregisttrimestre</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('d_parc_abonne_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+                <td>{% if entity.pDate %}{{ entity.pDate|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{{ entity.pMobilePostPaye }}</td>
+                <td>{{ entity.pMobilePrePaye }}</td>
+                <td>{{ entity.pFixeMobiliteRestreinte }}</td>
+                <td>{{ entity.pFixeResidentiel }}</td>
+                <td>{{ entity.pFixeProfessionnel }}</td>
+                <td>{{ entity.pFixeGlobal }}</td>
+                <td>{{ entity.pPubliphoneLignes }}</td>
+                <td>{{ entity.pInternetGlobaleAdsl }}</td>
+                <td>{{ entity.pInternetGlobaleMobile }}</td>
+                <td>{{ entity.pInternetGlobaleAutre }}</td>
+                <td>{{ entity.pInternetBasdebit }}</td>
+                <td>{{ entity.pInternet }}</td>
+                <td>{{ entity.pInternetClassique }}</td>
+                <td>{{ entity.pInternetForfait }}</td>
+                <td>{{ entity.pInternetAdsl }}</td>
+                <td>{{ entity.pInternetAdsldebit128k }}</td>
+                <td>{{ entity.pInternetAdsldebit153k }}</td>
+                <td>{{ entity.pInternetAdsldebit256k }}</td>
+                <td>{{ entity.pInternetAdsldebit512k }}</td>
+                <td>{{ entity.pInternetAdsldebit1024k }}</td>
+                <td>{{ entity.pInternetAdsldebit2M }}</td>
+                <td>{{ entity.pInternetAdsldebit4M }}</td>
+                <td>{{ entity.pInternetAdsldebit8M }}</td>
+                <td>{{ entity.pInternetAdsldebit12M }}</td>
+                <td>{{ entity.pInternetAdsldebit20M }}</td>
+                <td>{{ entity.pllInternet }}</td>
+                <td>{{ entity.pInternet3G }}</td>
+                <td>{{ entity.pInternet3GData }}</td>
+                <td>{{ entity.pInternet3GDataVoi }}</td>
+                <td>{{ entity.pNomDomainMa }}</td>
+                <td>{{ entity.pRepartMa }}</td>
+                <td>{{ entity.pRepartAutre }}</td>
+                <td>{{ entity.pNewEnregistTrimestre }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('d_parc_abonne_show', { 'id': entity.id }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('d_parc_abonne_edit', { 'id': entity.id }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('d_parc_abonne_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

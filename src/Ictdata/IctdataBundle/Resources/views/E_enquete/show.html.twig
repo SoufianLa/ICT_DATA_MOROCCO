@@ -1,0 +1,88 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>E_enquete</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ entity.id }}</td>
+            </tr>
+            <tr>
+                <th>Edate</th>
+                <td>{{ entity.eDate|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Emenagesfixe</th>
+                <td>{{ entity.eMenagesFixe }}</td>
+            </tr>
+            <tr>
+                <th>Emenagesmobile</th>
+                <td>{{ entity.eMenagesMobile }}</td>
+            </tr>
+            <tr>
+                <th>Eindividusmobile</th>
+                <td>{{ entity.eIndividusMobile }}</td>
+            </tr>
+            <tr>
+                <th>Eindividusmobileinternet</th>
+                <td>{{ entity.eIndividusMobileInternet }}</td>
+            </tr>
+            <tr>
+                <th>Eindividussmartphone</th>
+                <td>{{ entity.eIndividusSmartphone }}</td>
+            </tr>
+            <tr>
+                <th>Emenagesequordinateur</th>
+                <td>{{ entity.eMenagesequOrdinateur }}</td>
+            </tr>
+            <tr>
+                <th>Emenagesordinateurbureau</th>
+                <td>{{ entity.eMenagesOrdinateurBureau }}</td>
+            </tr>
+            <tr>
+                <th>Emenagesordinateurpc</th>
+                <td>{{ entity.eMenagesOrdinateurPc }}</td>
+            </tr>
+            <tr>
+                <th>Emenagesordinateurtablette</th>
+                <td>{{ entity.eMenagesOrdinateurTablette }}</td>
+            </tr>
+            <tr>
+                <th>Emenagesinternetfixe</th>
+                <td>{{ entity.eMenagesInternetFixe }}</td>
+            </tr>
+            <tr>
+                <th>Emenagesinternetmobile</th>
+                <td>{{ entity.eMenagesInternetMobile }}</td>
+            </tr>
+            <tr>
+                <th>Emenagesinternetmobilefixe</th>
+                <td>{{ entity.eMenagesInternetMobileFixe }}</td>
+            </tr>
+            <tr>
+                <th>Eindividusinternet</th>
+                <td>{{ entity.eIndividusInternet }}</td>
+            </tr>
+            <tr>
+                <th>Enbrinternautes</th>
+                <td>{{ entity.eNbrInternautes }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('e_enquete') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('e_enquete_edit', { 'id': entity.id }) }}">
+            Edit
+        </a>
+    </li>
+    <li>{{ form(delete_form) }}</li>
+</ul>
+{% endblock %}

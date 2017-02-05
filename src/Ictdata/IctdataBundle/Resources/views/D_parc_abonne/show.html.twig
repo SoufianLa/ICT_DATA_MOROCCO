@@ -1,0 +1,164 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>D_parc_abonne</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ entity.id }}</td>
+            </tr>
+            <tr>
+                <th>Pdate</th>
+                <td>{{ entity.pDate|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Pmobilepostpaye</th>
+                <td>{{ entity.pMobilePostPaye }}</td>
+            </tr>
+            <tr>
+                <th>Pmobileprepaye</th>
+                <td>{{ entity.pMobilePrePaye }}</td>
+            </tr>
+            <tr>
+                <th>Pfixemobiliterestreinte</th>
+                <td>{{ entity.pFixeMobiliteRestreinte }}</td>
+            </tr>
+            <tr>
+                <th>Pfixeresidentiel</th>
+                <td>{{ entity.pFixeResidentiel }}</td>
+            </tr>
+            <tr>
+                <th>Pfixeprofessionnel</th>
+                <td>{{ entity.pFixeProfessionnel }}</td>
+            </tr>
+            <tr>
+                <th>Pfixeglobal</th>
+                <td>{{ entity.pFixeGlobal }}</td>
+            </tr>
+            <tr>
+                <th>Ppubliphonelignes</th>
+                <td>{{ entity.pPubliphoneLignes }}</td>
+            </tr>
+            <tr>
+                <th>Pinternetglobaleadsl</th>
+                <td>{{ entity.pInternetGlobaleAdsl }}</td>
+            </tr>
+            <tr>
+                <th>Pinternetglobalemobile</th>
+                <td>{{ entity.pInternetGlobaleMobile }}</td>
+            </tr>
+            <tr>
+                <th>Pinternetglobaleautre</th>
+                <td>{{ entity.pInternetGlobaleAutre }}</td>
+            </tr>
+            <tr>
+                <th>Pinternetbasdebit</th>
+                <td>{{ entity.pInternetBasdebit }}</td>
+            </tr>
+            <tr>
+                <th>Pinternet</th>
+                <td>{{ entity.pInternet }}</td>
+            </tr>
+            <tr>
+                <th>Pinternetclassique</th>
+                <td>{{ entity.pInternetClassique }}</td>
+            </tr>
+            <tr>
+                <th>Pinternetforfait</th>
+                <td>{{ entity.pInternetForfait }}</td>
+            </tr>
+            <tr>
+                <th>Pinternetadsl</th>
+                <td>{{ entity.pInternetAdsl }}</td>
+            </tr>
+            <tr>
+                <th>Pinternetadsldebit128k</th>
+                <td>{{ entity.pInternetAdsldebit128k }}</td>
+            </tr>
+            <tr>
+                <th>Pinternetadsldebit153k</th>
+                <td>{{ entity.pInternetAdsldebit153k }}</td>
+            </tr>
+            <tr>
+                <th>Pinternetadsldebit256k</th>
+                <td>{{ entity.pInternetAdsldebit256k }}</td>
+            </tr>
+            <tr>
+                <th>Pinternetadsldebit512k</th>
+                <td>{{ entity.pInternetAdsldebit512k }}</td>
+            </tr>
+            <tr>
+                <th>Pinternetadsldebit1024k</th>
+                <td>{{ entity.pInternetAdsldebit1024k }}</td>
+            </tr>
+            <tr>
+                <th>Pinternetadsldebit2m</th>
+                <td>{{ entity.pInternetAdsldebit2M }}</td>
+            </tr>
+            <tr>
+                <th>Pinternetadsldebit4m</th>
+                <td>{{ entity.pInternetAdsldebit4M }}</td>
+            </tr>
+            <tr>
+                <th>Pinternetadsldebit8m</th>
+                <td>{{ entity.pInternetAdsldebit8M }}</td>
+            </tr>
+            <tr>
+                <th>Pinternetadsldebit12m</th>
+                <td>{{ entity.pInternetAdsldebit12M }}</td>
+            </tr>
+            <tr>
+                <th>Pinternetadsldebit20m</th>
+                <td>{{ entity.pInternetAdsldebit20M }}</td>
+            </tr>
+            <tr>
+                <th>Pllinternet</th>
+                <td>{{ entity.pllInternet }}</td>
+            </tr>
+            <tr>
+                <th>Pinternet3g</th>
+                <td>{{ entity.pInternet3G }}</td>
+            </tr>
+            <tr>
+                <th>Pinternet3gdata</th>
+                <td>{{ entity.pInternet3GData }}</td>
+            </tr>
+            <tr>
+                <th>Pinternet3gdatavoi</th>
+                <td>{{ entity.pInternet3GDataVoi }}</td>
+            </tr>
+            <tr>
+                <th>Pnomdomainma</th>
+                <td>{{ entity.pNomDomainMa }}</td>
+            </tr>
+            <tr>
+                <th>Prepartma</th>
+                <td>{{ entity.pRepartMa }}</td>
+            </tr>
+            <tr>
+                <th>Prepartautre</th>
+                <td>{{ entity.pRepartAutre }}</td>
+            </tr>
+            <tr>
+                <th>Pnewenregisttrimestre</th>
+                <td>{{ entity.pNewEnregistTrimestre }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('d_parc_abonne') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('d_parc_abonne_edit', { 'id': entity.id }) }}">
+            Edit
+        </a>
+    </li>
+    <li>{{ form(delete_form) }}</li>
+</ul>
+{% endblock %}
